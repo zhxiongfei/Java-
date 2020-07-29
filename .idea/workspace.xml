@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85cfe791-e2f4-4657-933a-ccecfb57896a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apache-tomcat-9.0.34/webapps/docs/docs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apache-tomcat-9.0.34/webapps/examples/WEB-INF/WEB-INF.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apache-tomcat-9.0.34/webapps/examples/WEB-INF/jsp/jsp1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apache-tomcat-9.0.34/webapps/examples/jsp/jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apache-tomcat-9.0.34/work/work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/.idea/artifacts/helloworld_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/.idea/artifacts/qq_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/helloworld/helloworld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/helloworld/src/mj/zxf/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/helloworld/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/helloworld/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/helloworld/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/helloworld_war_exploded/WEB-INF/classes/META-INF/helloworld.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/helloworld_war_exploded/WEB-INF/classes/mj/zxf/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/helloworld_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/helloworld_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/helloworld_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/qq_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/qq_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/artifacts/qq_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/production/helloworld/META-INF/helloworld.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/out/production/helloworld/mj/zxf/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/qq/qq.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/qq/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/qq/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_tomcat/qq/web/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fM5QmiEMysi7fttRgKs0KHD4Wx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85cfe791-e2f4-4657-933a-ccecfb57896a" name="Default Changelist" comment="" />
+      <created>1596015106895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596015106895</updated>
+      <workItem from="1596015108929" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="300" y="23" width="1024" height="820" key="#Project_Structure" timestamp="1596015126384">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="300" y="23" width="1024" height="820" key="#Project_Structure/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1596015126384" />
+  </component>
+</project>
