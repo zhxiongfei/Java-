@@ -1,0 +1,397 @@
+29-Jul-2020 11:52:15.204 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 11:52:15.210 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 11:52:15.210 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 11:52:15.210 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 11:52:15.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 11:52:15.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 11:52:15.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 11:52:15.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 11:52:15.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 11:52:15.212 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 11:52:15.212 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 11:52:15.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 11:52:15.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 11:52:15.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 11:52:15.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 11:52:15.241 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 11:52:15.241 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 11:52:15.241 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 11:52:15.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 11:52:15.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 11:52:15.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 11:52:15.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 11:52:15.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 11:52:15.243 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 11:52:15.549 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 11:52:15.600 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[676]毫秒内初始化
+29-Jul-2020 11:52:15.650 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 11:52:15.651 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 11:52:15.660 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 11:52:15.920 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [261] ms
+29-Jul-2020 11:52:15.921 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 11:52:15.955 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [35] ms
+29-Jul-2020 11:52:15.955 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 11:52:16.186 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [231] ms
+29-Jul-2020 11:52:16.187 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 11:52:16.204 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [17] ms
+29-Jul-2020 11:52:16.204 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 11:52:16.240 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [36] ms
+29-Jul-2020 11:52:16.247 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+29-Jul-2020 11:52:16.274 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [672] milliseconds
+29-Jul-2020 11:52:50.020 信息 [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 11:52:50.031 信息 [Thread-3] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 11:52:50.091 信息 [Thread-3] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 11:52:50.096 信息 [Thread-3] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:21:50.524 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 12:21:50.530 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 12:21:50.530 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 12:21:50.530 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 12:21:50.531 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 12:21:50.531 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 12:21:50.531 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 12:21:50.531 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 12:21:50.531 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 12:21:50.532 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:21:50.532 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 12:21:50.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 12:21:50.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 12:21:50.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 12:21:50.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 12:21:50.547 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 12:21:50.790 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:21:50.829 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[523]毫秒内初始化
+29-Jul-2020 12:21:50.868 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 12:21:50.868 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 12:21:50.874 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 12:21:51.102 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [228] ms
+29-Jul-2020 12:21:51.102 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 12:21:51.137 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [34] ms
+29-Jul-2020 12:21:51.137 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 12:21:51.388 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [251] ms
+29-Jul-2020 12:21:51.388 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 12:21:51.402 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [14] ms
+29-Jul-2020 12:21:51.402 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 12:21:51.416 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [14] ms
+29-Jul-2020 12:21:51.421 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+29-Jul-2020 12:21:51.429 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [600] milliseconds
+29-Jul-2020 12:22:35.515 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 12:22:35.520 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 12:22:35.521 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 12:22:35.521 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 12:22:35.521 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 12:22:35.521 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 12:22:35.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 12:22:35.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 12:22:35.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 12:22:35.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:35.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 12:22:35.538 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 12:22:35.539 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 12:22:35.539 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 12:22:35.539 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 12:22:35.540 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 12:22:35.540 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 12:22:35.540 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 12:22:35.540 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 12:22:35.540 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 12:22:35.541 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:35.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:35.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 12:22:35.542 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 12:22:35.803 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:22:35.834 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 初始化组件[Connector[HTTP/1.1-8080]]失败。
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1041)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1038)
+		... 13 more
+29-Jul-2020 12:22:35.839 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[524]毫秒内初始化
+29-Jul-2020 12:22:35.881 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 12:22:35.882 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 12:22:35.888 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 12:22:36.107 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [219] ms
+29-Jul-2020 12:22:36.108 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 12:22:36.138 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [31] ms
+29-Jul-2020 12:22:36.138 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 12:22:36.343 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [205] ms
+29-Jul-2020 12:22:36.343 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 12:22:36.356 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [12] ms
+29-Jul-2020 12:22:36.356 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 12:22:36.372 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [15] ms
+29-Jul-2020 12:22:36.376 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [536] milliseconds
+29-Jul-2020 12:22:36.382 严重 [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+29-Jul-2020 12:22:36.383 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:22:36.383 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 12:22:36.402 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:22:36.403 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:22:53.879 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 12:22:53.885 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 12:22:53.886 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 12:22:53.886 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 12:22:53.886 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 12:22:53.886 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 12:22:53.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 12:22:53.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 12:22:53.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 12:22:53.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:53.887 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 12:22:53.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 12:22:53.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 12:22:53.901 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 12:22:53.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 12:22:53.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 12:22:53.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 12:22:53.902 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 12:22:53.903 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 12:22:54.151 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:22:54.178 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 初始化组件[Connector[HTTP/1.1-8080]]失败。
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1041)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1038)
+		... 13 more
+29-Jul-2020 12:22:54.181 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[505]毫秒内初始化
+29-Jul-2020 12:22:54.223 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 12:22:54.224 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 12:22:54.230 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 12:22:54.436 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [206] ms
+29-Jul-2020 12:22:54.436 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 12:22:54.471 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [34] ms
+29-Jul-2020 12:22:54.471 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 12:22:54.680 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [209] ms
+29-Jul-2020 12:22:54.680 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 12:22:54.694 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [13] ms
+29-Jul-2020 12:22:54.694 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 12:22:54.712 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [17] ms
+29-Jul-2020 12:22:54.717 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [535] milliseconds
+29-Jul-2020 12:22:54.721 严重 [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+29-Jul-2020 12:22:54.722 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:22:54.723 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 12:22:54.738 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:22:54.738 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:23:04.250 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 12:23:04.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 12:23:04.256 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 12:23:04.256 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 12:23:04.256 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 12:23:04.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 12:23:04.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 12:23:04.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 12:23:04.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 12:23:04.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:23:04.258 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 12:23:04.271 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 12:23:04.271 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 12:23:04.271 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 12:23:04.271 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 12:23:04.272 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 12:23:04.272 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 12:23:04.272 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 12:23:04.272 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 12:23:04.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 12:23:04.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:23:04.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:23:04.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 12:23:04.275 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 12:23:04.513 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:23:04.540 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 初始化组件[Connector[HTTP/1.1-8080]]失败。
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1041)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1038)
+		... 13 more
+29-Jul-2020 12:23:04.554 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[486]毫秒内初始化
+29-Jul-2020 12:23:04.595 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 12:23:04.595 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 12:23:04.602 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 12:23:04.815 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [213] ms
+29-Jul-2020 12:23:04.815 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 12:23:04.848 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [33] ms
+29-Jul-2020 12:23:04.848 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 12:23:05.050 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [202] ms
+29-Jul-2020 12:23:05.051 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 12:23:05.064 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [12] ms
+29-Jul-2020 12:23:05.064 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 12:23:05.080 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [16] ms
+29-Jul-2020 12:23:05.084 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [529] milliseconds
+29-Jul-2020 12:23:05.089 严重 [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+29-Jul-2020 12:23:05.089 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:23:05.089 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 12:23:05.110 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:23:05.111 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:27:15.608 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2020 12:27:15.609 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:27:15.618 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 12:27:15.644 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:27:15.648 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:27:55.278 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.34
+29-Jul-2020 12:27:55.284 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Apr 3 2020 12:02:52 UTC
+29-Jul-2020 12:27:55.284 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号(：9.0.34.0
+29-Jul-2020 12:27:55.285 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2020 12:27:55.285 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.14.6
+29-Jul-2020 12:27:55.286 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  x86_64
+29-Jul-2020 12:27:55.286 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+29-Jul-2020 12:27:55.286 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              12.0.1+12
+29-Jul-2020 12:27:55.286 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+29-Jul-2020 12:27:55.287 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE：[/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:27:55.287 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34
+29-Jul-2020 12:27:55.301 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.lang=ALL-UNNAMED]
+29-Jul-2020 12:27:55.301 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.base/java.io=ALL-UNNAMED]
+29-Jul-2020 12:27:55.302 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED]
+29-Jul-2020 12:27:55.302 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.config.file=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/conf/logging.properties]
+29-Jul-2020 12:27:55.302 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager]
+29-Jul-2020 12:27:55.302 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djdk.tls.ephemeralDHKeySize=2048]
+29-Jul-2020 12:27:55.302 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.protocol.handler.pkgs=org.apache.catalina.webresources]
+29-Jul-2020 12:27:55.303 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dorg.apache.catalina.security.SecurityListener.UMASK=0027]
+29-Jul-2020 12:27:55.303 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dignore.endorsed.dirs=]
+29-Jul-2020 12:27:55.303 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.base=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:27:55.303 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Dcatalina.home=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34]
+29-Jul-2020 12:27:55.303 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：[-Djava.io.tmpdir=/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/temp]
+29-Jul-2020 12:27:55.304 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/liuxiaoyong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2020 12:27:55.583 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+29-Jul-2020 12:27:55.628 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[574]毫秒内初始化
+29-Jul-2020 12:27:55.674 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2020 12:27:55.675 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.34]
+29-Jul-2020 12:27:55.681 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs]
+29-Jul-2020 12:27:55.921 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/docs] has finished in [240] ms
+29-Jul-2020 12:27:55.921 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager]
+29-Jul-2020 12:27:55.964 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/manager] has finished in [43] ms
+29-Jul-2020 12:27:55.965 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples]
+29-Jul-2020 12:27:56.200 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/examples] has finished in [235] ms
+29-Jul-2020 12:27:56.200 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT]
+29-Jul-2020 12:27:56.215 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/ROOT] has finished in [15] ms
+29-Jul-2020 12:27:56.215 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager]
+29-Jul-2020 12:27:56.236 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/liuxiaoyong/Desktop/Personal/backend_project/apache-tomcat-9.0.34/webapps/host-manager] has finished in [21] ms
+29-Jul-2020 12:27:56.241 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+29-Jul-2020 12:27:56.250 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [622] milliseconds
+29-Jul-2020 12:31:17.816 信息 [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:31:17.822 信息 [Thread-3] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+29-Jul-2020 12:31:17.860 信息 [Thread-3] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+29-Jul-2020 12:31:17.866 信息 [Thread-3] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
