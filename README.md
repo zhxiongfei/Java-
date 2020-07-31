@@ -27,3 +27,27 @@
 - servlet 转发
 - 重定向
 
+
+
+## day 04
+
+- mysql 安装
+- navcat 安装
+- DDL语句基本操作
+
+
+
+## day 05
+
+- DQL语句
+- 主键 / 外键
+- 级联 / 多表查询
+- 排序 / 分页
+
+
+
+## day 06
+
+- java 操作数据库
+- jdbc使用
+- preparestatement / statement常用 api
