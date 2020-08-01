@@ -1,6 +1,6 @@
 package com.zxf.dao;
 
-import bean.Customer;
+import com.zxf.bean.Customer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

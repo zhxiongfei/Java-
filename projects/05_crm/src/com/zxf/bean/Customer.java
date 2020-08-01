@@ -1,4 +1,4 @@
-package bean;
+package com.zxf.bean;
 
 public class Customer {
     private int id;

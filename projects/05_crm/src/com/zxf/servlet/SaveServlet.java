@@ -1,6 +1,6 @@
 package com.zxf.servlet;
 
-import bean.Customer;
+import com.zxf.bean.Customer;
 import com.zxf.dao.CustomerDao;
 
 import javax.servlet.ServletException;
