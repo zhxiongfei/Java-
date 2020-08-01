@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/02_crm/02_crm.iml" filepath="$PROJECT_DIR$/02_crm/02_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_crm/03_crm.iml" filepath="$PROJECT_DIR$/03_crm/03_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_jdbc/04_jdbc.iml" filepath="$PROJECT_DIR$/04_jdbc/04_jdbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/05_crm/05_crm.iml" filepath="$PROJECT_DIR$/05_crm/05_crm.iml" />
     </modules>
   </component>
 </project>
