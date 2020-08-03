@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/05_crm/05_crm.iml" filepath="$PROJECT_DIR$/05_crm/05_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_crm/06_crm.iml" filepath="$PROJECT_DIR$/06_crm/06_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_crm/07_crm.iml" filepath="$PROJECT_DIR$/07_crm/07_crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_crm/08_crm.iml" filepath="$PROJECT_DIR$/08_crm/08_crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_js/09_js.iml" filepath="$PROJECT_DIR$/09_js/09_js.iml" />
     </modules>
   </component>
 </project>
