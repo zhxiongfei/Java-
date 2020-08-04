@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="12_no_arch:war exploded">
+    <output-path>$PROJECT_DIR$/12_no_arch/target/12_no_arch-1.0.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>12_no_arch</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="12_no_arch" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.13" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.22" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.49" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/12_no_arch/target/12_no_arch-1.0.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="12_no_arch/web/Web" />
+    </root>
+  </artifact>
+</component>

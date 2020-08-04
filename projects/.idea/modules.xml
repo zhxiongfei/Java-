@@ -11,6 +11,10 @@
       <module fileurl="file://$PROJECT_DIR$/07_crm/07_crm.iml" filepath="$PROJECT_DIR$/07_crm/07_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/08_crm/08_crm.iml" filepath="$PROJECT_DIR$/08_crm/08_crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/09_js/09_js.iml" filepath="$PROJECT_DIR$/09_js/09_js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_maven/10_maven.iml" filepath="$PROJECT_DIR$/10_maven/10_maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_maveweb/11_maveweb.iml" filepath="$PROJECT_DIR$/11_maveweb/11_maveweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_no_arch/12_no_arch.iml" filepath="$PROJECT_DIR$/12_no_arch/12_no_arch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellomaven/hellomaven.iml" filepath="$PROJECT_DIR$/hellomaven/hellomaven.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="12_no_arch" />
+        <module name="10_maven" />
+        <module name="hellomaven" />
+        <module name="11_maveweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="10_maven" target="8" />
+      <module name="11_maveweb" target="8" />
+      <module name="12_no_arch" target="8" />
+      <module name="12_no_archetype" target="8" />
+      <module name="hellomaven" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
