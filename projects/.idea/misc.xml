@@ -2,7 +2,10 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/11_maveweb" />
+    <file type="web" url="file://$PROJECT_DIR$/12_mavenweb" />
     <file type="web" url="file://$PROJECT_DIR$/12_no_arch" />
+    <file type="web" url="file://$PROJECT_DIR$/13_maven_web_idea" />
+    <file type="web" url="file://$PROJECT_DIR$/15_maven_tomcat" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,6 +15,11 @@
         <option value="$PROJECT_DIR$/11_maveweb/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
+        <option value="$PROJECT_DIR$/11_maven_idea/pom.xml" />
+        <option value="$PROJECT_DIR$/12_mavenweb/pom.xml" />
+        <option value="$PROJECT_DIR$/13_maven_web_idea/pom.xml" />
+        <option value="$PROJECT_DIR$/14_mavenweb_noarch/pom.xml" />
+        <option value="$PROJECT_DIR$/15_maven_tomcat/pom.xml" />
       </list>
     </option>
   </component>

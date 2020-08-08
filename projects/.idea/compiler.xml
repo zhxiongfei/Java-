@@ -6,18 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="12_no_arch" />
-        <module name="10_maven" />
+        <module name="15_maven_tomcat" />
+        <module name="mavenweb" />
         <module name="hellomaven" />
-        <module name="11_maveweb" />
+        <module name="14_mavenweb_noarch" />
+        <module name="11_maven_idea" />
+        <module name="10_maven" />
+        <module name="13_maven_web_idea" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="10_maven" target="8" />
+      <module name="11_maven_idea" target="8" />
       <module name="11_maveweb" target="8" />
       <module name="12_no_arch" target="8" />
       <module name="12_no_archetype" target="8" />
+      <module name="13_maven_web_idea" target="8" />
+      <module name="14_mavenweb_noarch" target="8" />
+      <module name="15_maven_tomcat" target="8" />
       <module name="hellomaven" target="1.5" />
+      <module name="mavenweb" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
