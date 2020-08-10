@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="15_maven_tomcat" />
+        <module name="resume" />
         <module name="mavenweb" />
         <module name="hellomaven" />
         <module name="14_mavenweb_noarch" />
@@ -26,6 +27,7 @@
       <module name="15_maven_tomcat" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
+      <module name="resume" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/12_no_arch" />
     <file type="web" url="file://$PROJECT_DIR$/13_maven_web_idea" />
     <file type="web" url="file://$PROJECT_DIR$/15_maven_tomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/resume" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -20,6 +21,7 @@
         <option value="$PROJECT_DIR$/13_maven_web_idea/pom.xml" />
         <option value="$PROJECT_DIR$/14_mavenweb_noarch/pom.xml" />
         <option value="$PROJECT_DIR$/15_maven_tomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/resume/pom.xml" />
       </list>
     </option>
   </component>
