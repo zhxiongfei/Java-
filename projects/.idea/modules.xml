@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/01_hello/01_hello.iml" filepath="$PROJECT_DIR$/01_hello/01_hello.iml" />
-      <module fileurl="file://$PROJECT_DIR$/02_crm/02_crm.iml" filepath="$PROJECT_DIR$/02_crm/02_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/03_crm/03_crm.iml" filepath="$PROJECT_DIR$/03_crm/03_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/04_jdbc/04_jdbc.iml" filepath="$PROJECT_DIR$/04_jdbc/04_jdbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/05_crm/05_crm.iml" filepath="$PROJECT_DIR$/05_crm/05_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/06_crm/06_crm.iml" filepath="$PROJECT_DIR$/06_crm/06_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/07_crm/07_crm.iml" filepath="$PROJECT_DIR$/07_crm/07_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/08_crm/08_crm.iml" filepath="$PROJECT_DIR$/08_crm/08_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/09_js/09_js.iml" filepath="$PROJECT_DIR$/09_js/09_js.iml" />
-      <module fileurl="file://$PROJECT_DIR$/10_maven/10_maven.iml" filepath="$PROJECT_DIR$/10_maven/10_maven.iml" />
-      <module fileurl="file://$PROJECT_DIR$/11_maven_idea/11_maven_idea.iml" filepath="$PROJECT_DIR$/11_maven_idea/11_maven_idea.iml" />
-      <module fileurl="file://$PROJECT_DIR$/13_maven_web_idea/13_maven_web_idea.iml" filepath="$PROJECT_DIR$/13_maven_web_idea/13_maven_web_idea.iml" />
-      <module fileurl="file://$PROJECT_DIR$/14_mavenweb_noarch/14_mavenweb_noarch.iml" filepath="$PROJECT_DIR$/14_mavenweb_noarch/14_mavenweb_noarch.iml" />
-      <module fileurl="file://$PROJECT_DIR$/15_maven_tomcat/15_maven_tomcat.iml" filepath="$PROJECT_DIR$/15_maven_tomcat/15_maven_tomcat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/14_mavenweb_noarch/15_review_tomcat.iml" filepath="$PROJECT_DIR$/14_mavenweb_noarch/15_review_tomcat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hellomaven/hellomaven.iml" filepath="$PROJECT_DIR$/hellomaven/hellomaven.iml" />
-      <module fileurl="file://$PROJECT_DIR$/12_mavenweb/mavenweb.iml" filepath="$PROJECT_DIR$/12_mavenweb/mavenweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/resume/resume.iml" filepath="$PROJECT_DIR$/resume/resume.iml" />
-      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2/xr2.iml" filepath="$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2/xr2.iml" />
     </modules>
   </component>
 </project>

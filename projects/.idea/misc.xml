@@ -7,21 +7,17 @@
     <file type="web" url="file://$PROJECT_DIR$/13_maven_web_idea" />
     <file type="web" url="file://$PROJECT_DIR$/15_maven_tomcat" />
     <file type="web" url="file://$PROJECT_DIR$/resume" />
+    <file type="web" url="file://$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/hellomaven/pom.xml" />
-        <option value="$PROJECT_DIR$/10_maven/pom.xml" />
         <option value="$PROJECT_DIR$/11_maveweb/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
-        <option value="$PROJECT_DIR$/11_maven_idea/pom.xml" />
-        <option value="$PROJECT_DIR$/12_mavenweb/pom.xml" />
-        <option value="$PROJECT_DIR$/13_maven_web_idea/pom.xml" />
-        <option value="$PROJECT_DIR$/14_mavenweb_noarch/pom.xml" />
-        <option value="$PROJECT_DIR$/15_maven_tomcat/pom.xml" />
         <option value="$PROJECT_DIR$/resume/pom.xml" />
+        <option value="$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2/pom.xml" />
       </list>
     </option>
   </component>
