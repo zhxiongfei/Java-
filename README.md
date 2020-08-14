@@ -110,3 +110,22 @@
 - 开始简历管理项目 resume
 - 主要注重后端逻辑，所以拷贝 html, js, css代码
 - 起服务可以正常访问静态页面
+
+
+
+## day15
+
+- jdbc 连接数据库
+- druid 连接池使用
+- BaseDao封装
+- 网站信息模块 
+  - jsp改造
+  - WebsiteBean定义 
+  - WebsiteDao
+
+
+
+## day16
+
+- 教育信息列表
+- 教育信息添加 / 删除操纵

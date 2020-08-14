@@ -1,17 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<% request.setAttribute("ctx", request.getContextPath()); %>
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>小码哥简历管理-教育信息</title>
-    <link rel="icon" href="../../asset/admin/img/favicon.png" type="image/x-icon">
-    <link href="../../asset/plugin/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="../../asset/plugin/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
-    <link href="../../asset/plugin/node-waves/waves.css" rel="stylesheet">
-    <link href="../../asset/plugin/animate-css/animate.min.css" rel="stylesheet">
-    <link href="../../asset/admin/css/material-icons.css" rel="stylesheet">
-    <link href="../../asset/admin/css/style.min.css" rel="stylesheet">
-    <link href="../../asset/admin/css/theme-blue.min.css" rel="stylesheet">
-    <link href="../../asset/admin/css/main.css" rel="stylesheet">
+    <link rel="icon" href="${ctx}/asset/admin/img/favicon.png" type="image/x-icon">
+    <link href="${ctx}/asset/plugin/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="${ctx}/asset/plugin/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
+    <link href="${ctx}/asset/plugin/node-waves/waves.css" rel="stylesheet">
+    <link href="${ctx}/asset/plugin/animate-css/animate.min.css" rel="stylesheet">
+    <link href="${ctx}/asset/admin/css/material-icons.css" rel="stylesheet">
+    <link href="${ctx}/asset/admin/css/style.min.css" rel="stylesheet">
+    <link href="${ctx}/asset/admin/css/theme-blue.min.css" rel="stylesheet">
+    <link href="${ctx}/asset/admin/css/main.css" rel="stylesheet">
 </head>
 
 <body class="theme-blue">
@@ -54,7 +58,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="../../asset/admin/img/avatar.png" alt="User">
+                    <img src="${ctx}/asset/admin/img/avatar.png" alt="User">
                 </div>
                 <div class="info-container">
                     <div class="name">M了个J</div>
@@ -92,7 +96,7 @@
                         </a>
                     </li>
                     <li class="active">
-                        <a href="education.html">
+                        <a href="education.jsp">
                             <i class="material-icons">school</i>
                             <span>教育经验</span>
                         </a>
@@ -183,78 +187,37 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="switch">
-                                            <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
-                                        </div>
-                                    </td>
-                                    <td>XX大学</td>
-                                    <td>2011-09-09</td>
-                                    <td>2014-08-08</td>
-                                    <td>本科</td>
-                                    <td>XXX</td>
-                                    <td>
-                                        <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                onclick="edit()">
-                                            <i class="material-icons">edit</i>
-                                            <span>编辑</span>
-                                        </button>
-                                        <button type="button" class="btn bg-pink waves-effect btn-xs"
-                                                onclick="remove('XX大学')">
-                                            <i class="material-icons">delete</i>
-                                            <span>删除</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="switch">
-                                            <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
-                                        </div>
-                                    </td>
-                                    <td>XX大学</td>
-                                    <td>2011-09-09</td>
-                                    <td>2014-08-08</td>
-                                    <td>本科</td>
-                                    <td>XXX</td>
-                                    <td>
-                                        <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                onclick="edit()">
-                                            <i class="material-icons">edit</i>
-                                            <span>编辑</span>
-                                        </button>
-                                        <button type="button" class="btn bg-pink waves-effect btn-xs"
-                                                onclick="remove('XX大学')">
-                                            <i class="material-icons">delete</i>
-                                            <span>删除</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="switch">
-                                            <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
-                                        </div>
-                                    </td>
-                                    <td>XX大学</td>
-                                    <td>2011-09-09</td>
-                                    <td>2014-08-08</td>
-                                    <td>本科</td>
-                                    <td>XXX</td>
-                                    <td>
-                                        <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                onclick="edit()">
-                                            <i class="material-icons">edit</i>
-                                            <span>编辑</span>
-                                        </button>
-                                        <button type="button" class="btn bg-pink waves-effect btn-xs"
-                                                onclick="remove('XX大学')">
-                                            <i class="material-icons">delete</i>
-                                            <span>删除</span>
-                                        </button>
-                                    </td>
-                                </tr>
+                                <form id="remove-form" action="${ctx}/education/removeAll" method="post">
+                                    <c:forEach items="${educations}" var="education">
+                                        <tr>
+                                            <td>
+                                                <div class="switch">
+                                                    <label>
+                                                        <input type="checkbox" name="id" value="${education.id}">
+                                                        <span class="lever switch-col-blue"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>${education.name}</td>
+                                            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.beginDay}" /></td>
+                                            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.endDay}" /></td>
+                                            <td>${education.typeString}</td>
+                                            <td>${education.intro}</td>
+                                            <td>
+                                                    <%--                                            <button type="button" class="btn bg-blue waves-effect btn-xs"--%>
+                                                    <%--                                                    onclick="edit(${education.json})">--%>
+                                                    <%--                                                <i class="material-icons">edit</i>--%>
+                                                    <%--                                                <span>编辑</span>--%>
+                                                    <%--                                            </button>--%>
+                                                <button type="button" class="btn bg-pink waves-effect btn-xs"
+                                                        onclick="remove('${education.id}','${education.name}', this)">
+                                                    <i class="material-icons">delete</i>
+                                                    <span>删除</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>>
+                                </form>
                                 </tbody>
                             </table>
                         </div>
@@ -272,7 +235,7 @@
                     <h4 class="modal-title">添加教育</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-validation" method="post">
+                    <form class="form-validation" method="post" action="${ctx}/education/save">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 form-control-label">
                                 <label for="name">名称</label>
@@ -358,18 +321,18 @@
         </div>
     </div>
 
-    <script src="../../asset/plugin/jquery/jquery.min.js"></script>
-    <script src="../../asset/plugin/bootstrap/bootstrap.min.js"></script>
-    <script src="../../asset/plugin/bootstrap-fileinput/bootstrap-fileinput.js"></script>
-    <script src="../../asset/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-    <script src="../../asset/plugin/node-waves/waves.js"></script>
-    <script src="../../asset/plugin/jquery-validation/jquery.validate.js"></script>
-    <script src="../../asset/plugin/jquery-validation/messages_zh.js"></script>
-    <script src="../../asset/plugin/sweetalert/sweetalert.min.js"></script>
+    <script src="${ctx}/asset/plugin/jquery/jquery.min.js"></script>
+    <script src="${ctx}/asset/plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="${ctx}/asset/plugin/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+    <script src="${ctx}/asset/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="${ctx}/asset/plugin/node-waves/waves.js"></script>
+    <script src="${ctx}/asset/plugin/jquery-validation/jquery.validate.js"></script>
+    <script src="${ctx}/asset/plugin/jquery-validation/messages_zh.js"></script>
+    <script src="${ctx}/asset/plugin/sweetalert/sweetalert.min.js"></script>
 
     <!-- Custom Js -->
-    <script src="../../asset/admin/js/default.js"></script>
-    <script src="../../asset/admin/js/main.js"></script>
+    <script src="${ctx}/asset/admin/js/default.js"></script>
+    <script src="${ctx}/asset/admin/js/main.js"></script>
     <script>
         addValidatorRules('.form-validation')
 
@@ -377,7 +340,7 @@
             $('#add-form-box').modal()
         }
 
-        function remove(name) {
+        function remove(id, name) {
             swal({
                 title: "你确定？",
                 text: '你确定要删除【' + name + '】？',
@@ -389,13 +352,17 @@
                 }
             }).then(willDelete => {
                 if (!willDelete) return
-                swal({
-                    title: '删除成功',
-                    text: '【' + name + '】已经被删除！',
-                    icon: 'success',
-                    timer: 1500,
-                    buttons: false
-                })
+
+                // 点击了确定删除
+                window.location.href = "${ctx}/education/remove?id=" + id;
+
+                // swal({
+                //     title: '删除成功',
+                //     text: '【' + name + '】已经被删除！',
+                //     icon: 'success',
+                //     timer: 1500,
+                //     buttons: false
+                // })
             })
         }
 
@@ -411,13 +378,17 @@
                 }
             }).then(willDelete => {
                 if (!willDelete) return
-                swal({
-                    title: "删除成功",
-                    text: "被选中的记录已经被删除！",
-                    icon: "success",
-                    timer: 1500,
-                    buttons: false
-                })
+
+                // 拿到表单 发送请求
+                $('#remove-form').submit()
+
+                // swal({
+                //     title: "删除成功",
+                //     text: "被选中的记录已经被删除！",
+                //     icon: "success",
+                //     timer: 1500,
+                //     buttons: false
+                // })
             })
         }
 

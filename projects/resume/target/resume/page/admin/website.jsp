@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="education.html">
+                        <a href="education.jsp">
                             <i class="material-icons">school</i>
                             <span>教育经验</span>
                         </a>
@@ -151,7 +151,8 @@
                             <h2>网站信息</h2>
                         </div>
                         <div class="body">
-                            <form class="form-validation" method="post">
+                            <form class="form-validation" method="post" action="${ctx}/website/save">
+                                <input type="hidden" name="id" value="${website.id}">
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 form-control-label">
                                         <label for="footer">底部</label>
