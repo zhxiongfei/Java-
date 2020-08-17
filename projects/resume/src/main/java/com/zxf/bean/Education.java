@@ -1,5 +1,9 @@
 package com.zxf.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Education extends BaseBean{
@@ -33,6 +37,7 @@ public class Education extends BaseBean{
         return type;
     }
 
+    @JsonIgnore
     public String getTypeString(){
         switch (type){
             case 1: return "小学";

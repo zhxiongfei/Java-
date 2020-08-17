@@ -1,149 +1,16 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<% request.setAttribute("ctx", request.getContextPath()); %>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>小码哥简历管理-教育信息</title>
-    <link rel="icon" href="${ctx}/asset/admin/img/favicon.png" type="image/x-icon">
-    <link href="${ctx}/asset/plugin/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/plugin/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
-    <link href="${ctx}/asset/plugin/node-waves/waves.css" rel="stylesheet">
-    <link href="${ctx}/asset/plugin/animate-css/animate.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/material-icons.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/style.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/theme-blue.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/main.css" rel="stylesheet">
+    <%@ include file="common/head.jsp"%>
 </head>
 
 <body class="theme-blue">
-    <!-- Overlay For Sidebars -->
-    <div class="overlay"></div>
-    <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="输入开始搜索">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
-    <!-- #END# Search Bar -->
-    <!-- Top Bar -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="#">小码哥简历管理</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-                    <!-- #END# Tasks -->
-                    <li><a href="javascript:void(0);" data-close="true"><i class="material-icons">more_vert</i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- #Top Bar -->
-    <section>
-        <!-- Left Sidebar -->
-        <aside id="leftsidebar" class="sidebar">
-            <!-- User Info -->
-            <div class="user-info">
-                <div class="image">
-                    <img src="${ctx}/asset/admin/img/avatar.png" alt="User">
-                </div>
-                <div class="info-container">
-                    <div class="name">M了个J</div>
-                    <div class="email">小码哥 | 讲师</div>
-                    <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown">keyboard_arrow_down</i>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="../front/user.html"><i class="material-icons">person</i>个人信息</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="../login.html"><i class="material-icons">input</i>退出登录</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- #User Info -->
-            <!-- Menu -->
-            <div class="menu">
-                <ul class="list">
-                    <li>
-                        <a href="user.html">
-                            <i class="material-icons">person</i>
-                            <span>个人信息</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="skill.html">
-                            <i class="material-icons">accessibility</i>
-                            <span>专业技能</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="password.html">
-                            <i class="material-icons">lock</i>
-                            <span>修改密码</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="education.jsp">
-                            <i class="material-icons">school</i>
-                            <span>教育经验</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="company.html">
-                            <i class="material-icons">domain</i>
-                            <span>公司信息</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="experience.html">
-                            <i class="material-icons">work</i>
-                            <span>工作经验</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <i class="material-icons">build</i>
-                            <span>项目经验</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="award.html">
-                            <i class="material-icons">plus_one</i>
-                            <span>获奖成就</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <i class="material-icons">comment</i>
-                            <span>留言信息</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="website.jsp">
-                            <i class="material-icons">language</i>
-                            <span>网站信息</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- #Menu -->
-        </aside>
-        <!-- #END# Left Sidebar -->
-    </section>
-
+    <%@include file="common/middle.jsp" %>
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -156,7 +23,7 @@
                             <div class="menus">
                                 <div class="buttons">
                                     <button type="button" class="btn bg-blue waves-effect btn-sm"
-                                            data-toggle="modal" data-target="#add-form-box">
+                                    onclick="add()">
                                         <i class="material-icons">add</i>
                                         <span>添加</span>
                                     </button>
@@ -205,7 +72,7 @@
                                             <td>${education.intro}</td>
                                             <td>
                                                 <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                        onclick="edit(${education.json})">
+                                                        onclick="edit(${education.JSON})">
                                                     <i class="material-icons">edit</i>
                                                     <span>编辑</span>
                                                 </button>
@@ -236,6 +103,7 @@
                 </div>
                 <div class="modal-body">
                     <form class="form-validation" method="post" action="${ctx}/education/save">
+                        <input type="hidden" name="id">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 form-control-label">
                                 <label for="name">名称</label>
@@ -320,24 +188,28 @@
             </div>
         </div>
     </div>
+    <%@include file="common/footer.jsp"%>
+    <script>
+        $('.menu .list .education').addClass('active')
+    </script>
 
-    <script src="${ctx}/asset/plugin/jquery/jquery.min.js"></script>
-    <script src="${ctx}/asset/plugin/bootstrap/bootstrap.min.js"></script>
-    <script src="${ctx}/asset/plugin/bootstrap-fileinput/bootstrap-fileinput.js"></script>
-    <script src="${ctx}/asset/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-    <script src="${ctx}/asset/plugin/node-waves/waves.js"></script>
-    <script src="${ctx}/asset/plugin/jquery-validation/jquery.validate.js"></script>
-    <script src="${ctx}/asset/plugin/jquery-validation/messages_zh.js"></script>
-    <script src="${ctx}/asset/plugin/sweetalert/sweetalert.min.js"></script>
-
-    <!-- Custom Js -->
-    <script src="${ctx}/asset/admin/js/default.js"></script>
-    <script src="${ctx}/asset/admin/js/main.js"></script>
     <script>
         addValidatorRules('.form-validation')
 
-        function edit() {
-            $('#add-form-box').modal()
+        const $addFormBox = $('#add-form-box')
+        const $addForm = $addFormBox.find('form')
+
+        function add() {
+            $addFormBox.modal()
+            // 重置表单内容
+            $addForm[0].reset()
+        }
+
+        function edit(JSON) {
+            add()
+            for (const k in JSON){
+                $addForm.find('[name=' + k + ']').val(JSON[k])
+            }
         }
 
         function remove(id, name) {
