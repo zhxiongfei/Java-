@@ -65,19 +65,19 @@
         <div class="menu">
             <ul class="list">
                 <li class="user">
-                    <a href="../user.html">
+                    <a href="${ctx}/user/admin">
                         <i class="material-icons">person</i>
                         <span>个人信息</span>
                     </a>
                 </li>
                 <li class="skill">
-                    <a href="../skill.html">
+                    <a href="${ctx}/skill/admin">
                         <i class="material-icons">accessibility</i>
                         <span>专业技能</span>
                     </a>
                 </li>
                 <li class="password">
-                    <a href="../password.html">
+                    <a href="${ctx}/password/admin">
                         <i class="material-icons">lock</i>
                         <span>修改密码</span>
                     </a>
@@ -89,31 +89,31 @@
                     </a>
                 </li>
                 <li class="company">
-                    <a href="../company.html">
+                    <a href="${ctx}/company/admin">
                         <i class="material-icons">domain</i>
                         <span>公司信息</span>
                     </a>
                 </li>
                 <li class="expirence">
-                    <a href="${ctx}/skill/admin">
+                    <a href="${ctx}/experience/admin">
                         <i class="material-icons">work</i>
                         <span>工作经验</span>
                     </a>
                 </li>
                 <li class="project">
-                    <a href="../project.html">
+                    <a href="${ctx}/project/admin">
                         <i class="material-icons">build</i>
                         <span>项目经验</span>
                     </a>
                 </li>
                 <li class="award">
-                    <a href="../award.html">
+                    <a href="${ctx}/award/admin">
                         <i class="material-icons">plus_one</i>
                         <span>获奖成就</span>
                     </a>
                 </li>
                 <li class="contact">
-                    <a href="../contact.html">
+                    <a href="${ctx}/contact/admin">
                         <i class="material-icons">comment</i>
                         <span>留言信息</span>
                     </a>

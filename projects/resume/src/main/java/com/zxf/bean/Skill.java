@@ -18,17 +18,17 @@ public class Skill extends BaseBean{
         return level;
     }
 
-    public void setType(Integer level) {
+    public void setLevel(Integer level) {
         this.level = level;
     }
 
     @JsonIgnore
     public String getLevelString(){
         switch (level){
-            case 0: return "了解";
             case 1: return "熟悉";
             case 2: return "掌握";
-            default: return "精通";
+            case 3: return "精通";
+            default: return "了解";
         }
     }
 }

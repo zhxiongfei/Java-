@@ -44,7 +44,11 @@ public class BaseServlet extends HttpServlet {
             method.invoke(this, request, response);
         }catch (Exception e) {
             e.printStackTrace();
-        }
 
+            Throwable cause = e;
+            while (cause.getCause() != null) cause = cause.getCause();
+            request.setAttribute("error",cause.getClass().getName() + ": " + cause.getMessage());
+            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request,response);
+        }
     }
 }

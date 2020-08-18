@@ -37,56 +37,59 @@
                                 </div>
                             </div>
 
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                <tr>
-                                    <th>
-                                        <div class="switch">
-                                            <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
-                                        </div>
-                                    </th>
-                                    <th>名称</th>
-                                    <th>开始</th>
-                                    <th>结束</th>
-                                    <th>类型</th>
-                                    <th>简介</th>
-                                    <th>操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <form id="remove-form" action="${ctx}/education/remove" method="post">
-                                    <c:forEach items="${educations}" var="education">
-                                        <tr>
-                                            <td>
-                                                <div class="switch">
-                                                    <label>
-                                                        <input type="checkbox" name="id" value="${education.id}">
-                                                        <span class="lever switch-col-blue"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>${education.name}</td>
-                                            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.beginDay}" /></td>
-                                            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.endDay}" /></td>
-                                            <td>${education.typeString}</td>
-                                            <td>${education.intro}</td>
-                                            <td>
-                                                <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                        onclick="edit(${education.JSON})">
-                                                    <i class="material-icons">edit</i>
-                                                    <span>编辑</span>
-                                                </button>
-                                                <button type="button" class="btn bg-pink waves-effect btn-xs"
-                                                        onclick="remove('${education.id}','${education.name}', this)">
-                                                    <i class="material-icons">delete</i>
-                                                    <span>删除</span>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </c:forEach>>
-                                </form>
-                                </tbody>
-                            </table>
+                            <c:if test="${not empty educations}">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="switch">
+                                                <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
+                                            </div>
+                                        </th>
+                                        <th>名称</th>
+                                        <th>开始</th>
+                                        <th>结束</th>
+                                        <th>类型</th>
+                                        <th>简介</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <form id="remove-form" action="${ctx}/education/remove" method="post">
+                                        <c:forEach items="${educations}" var="education">
+                                            <tr>
+                                                <td>
+                                                    <div class="switch">
+                                                        <label>
+                                                            <input type="checkbox" name="id" value="${education.id}">
+                                                            <span class="lever switch-col-blue"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>${education.name}</td>
+                                                <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.beginDay}" /></td>
+                                                <td><fmt:formatDate pattern="yyyy-MM-dd" value="${education.endDay}" /></td>
+                                                <td>${education.typeString}</td>
+                                                <td>${education.intro}</td>
+                                                <td>
+                                                    <button type="button" class="btn bg-blue waves-effect btn-xs"
+                                                            onclick="edit(${education.JSON})">
+                                                        <i class="material-icons">edit</i>
+                                                        <span>编辑</span>
+                                                    </button>
+                                                    <button type="button" class="btn bg-pink waves-effect btn-xs"
+                                                            onclick="remove('${education.id}','${education.name}', this)">
+                                                        <i class="material-icons">delete</i>
+                                                        <span>删除</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </c:forEach>>
+                                    </form>
+                                    </tbody>
+                                </table>
+                            </c:if>
+
                         </div>
                     </div>
                 </div>

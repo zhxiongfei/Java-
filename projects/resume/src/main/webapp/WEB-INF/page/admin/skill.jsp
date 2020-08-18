@@ -24,7 +24,7 @@
                             <div class="menus">
                                 <div class="buttons">
                                     <button type="button" class="btn bg-blue waves-effect btn-sm"
-                                            data-toggle="modal" data-target="#add-form-box">
+                                            onclick="add()">
                                         <i class="material-icons">add</i>
                                         <span>添加</span>
                                     </button>
@@ -38,31 +38,49 @@
                                 </div>
                             </div>
 
-                            <table class="table table-bordered table-hover table-striped">
-                                <c:forEach items="${skills}" var="skill">
+                            <c:if test="${not empty skills}">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
                                     <tr>
-                                        <td>
+                                        <th>
                                             <div class="switch">
-                                                <label><input name="id" type="checkbox" value="${skill.id}"><span class="lever switch-col-blue"></span></label>
+                                                <label><input type="checkbox"><span class="lever switch-col-blue"></span></label>
                                             </div>
-                                        </td>
-                                        <td>${skill.name}</td>
-                                        <td>${skill.levelString}</td>
-                                        <td>
-                                            <button type="button" class="btn bg-blue waves-effect btn-xs"
-                                                    onclick="edit(${skill.json})">
-                                                <i class="material-icons">edit</i>
-                                                <span>编辑</span>
-                                            </button>
-                                            <button type="button" class="btn bg-pink waves-effect btn-xs"
-                                                    onclick="remove('${skill.id}', '${skill.name}')">
-                                                <i class="material-icons">delete</i>
-                                                <span>删除</span>
-                                            </button>
-                                        </td>
+                                        </th>
+                                        <th>名称</th>
+                                        <th>级别</th>
+                                        <th>操作</th>
                                     </tr>
-                                </c:forEach>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                    <form id="remove-form" method="post" action="${ctx}/skill/remove">
+                                        <c:forEach items="${skills}" var="skill">
+                                            <tr>
+                                                <td>
+                                                    <div class="switch">
+                                                        <label><input name="id" type="checkbox" value="${skill.id}"><span class="lever switch-col-blue"></span></label>
+                                                    </div>
+                                                </td>
+                                                <td>${skill.name}</td>
+                                                <td>${skill.levelString}</td>
+                                                <td>
+                                                    <button type="button" class="btn bg-blue waves-effect btn-xs"
+                                                            onclick="edit(${skill.JSON})">
+                                                        <i class="material-icons">edit</i>
+                                                        <span>编辑</span>
+                                                    </button>
+                                                    <button type="button" class="btn bg-pink waves-effect btn-xs"
+                                                            onclick="remove('${skill.id}', '${skill.name}')">
+                                                        <i class="material-icons">delete</i>
+                                                        <span>删除</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </c:forEach>
+                                    </form>
+                                    </tbody>
+                                </table>
+                            </c:if>
                         </div>
                     </div>
                 </div>
@@ -78,7 +96,8 @@
                     <h4 class="modal-title">添加专业技能</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-validation" method="post">
+                    <form class="form-validation" method="post" action="${ctx}/skill/save">
+                        <input style="display: none" type="text" name="id">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 form-control-label">
                                 <label for="name">名称</label>
@@ -123,10 +142,7 @@
 
     <%@include file="common/footer.jsp"%>
     <script>
-        $('.menu .list .education').addClass('active')
-    </script>
-
-    <script>
+        $('.menu .list .skill').addClass('active')
         addValidatorRules('.form-validation')
 
         const $addFormBox = $('#add-form-box')
@@ -159,15 +175,7 @@
                 if (!willDelete) return
 
                 // 点击了确定删除
-                window.location.href = "${ctx}/education/remove?id=" + id;
-
-                // swal({
-                //     title: '删除成功',
-                //     text: '【' + name + '】已经被删除！',
-                //     icon: 'success',
-                //     timer: 1500,
-                //     buttons: false
-                // })
+                window.location.href = "${ctx}/skill/remove?id=" + id;
             })
         }
 
@@ -186,14 +194,6 @@
 
                 // 拿到表单 发送请求
                 $('#remove-form').submit()
-
-                // swal({
-                //     title: "删除成功",
-                //     text: "被选中的记录已经被删除！",
-                //     icon: "success",
-                //     timer: 1500,
-                //     buttons: false
-                // })
             })
         }
 

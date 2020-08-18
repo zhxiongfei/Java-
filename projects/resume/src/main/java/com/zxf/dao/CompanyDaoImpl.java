@@ -1,0 +1,46 @@
+package com.zxf.dao;
+
+import com.zxf.bean.Company;
+import com.zxf.util.Dbs;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CompanyDaoImpl extends BaseDaoImpl<Company> implements CompanyDao {
+
+    @Override
+    protected String table() {
+        return "company";
+    }
+
+    @Override
+    public boolean save(Company bean) {
+        Integer id = bean.getId();
+        String sql;
+        List<Object> args = new ArrayList<>();
+        args.add(bean.getName());
+        args.add(bean.getLogo());
+        args.add(bean.getWebsite());
+        args.add(bean.getIntro());
+        if (id == null || id < 1){
+            sql = "INSERT INTO company(name, logo, website, intro) VALUES(?,?,?,?)";
+        }else {
+            sql = "UPDATE company SET name = ?, logo = ?, website = ?, intro = ? WHERE id = ?";
+            args.add(id);
+        }
+        return Dbs.getTpl().update(sql,args.toArray()) > 0;
+    }
+
+    @Override
+    public Company get(Integer id) {
+        String sql = "SELECT id, created_time, name, logo, website, intro FROM company WHERE id = ?";
+        return Dbs.getTpl().queryForObject(sql, new BeanPropertyRowMapper<>(Company.class), id);
+    }
+
+    @Override
+    public List<Company> list() {
+        String sql = "SELECT id, created_time, name, logo, website, intro FROM company";
+        return Dbs.getTpl().query(sql, new BeanPropertyRowMapper<>(Company.class));
+    }
+}

@@ -5,13 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>小码哥教育-Error</title>
-    <link rel="icon" href="${ctx}/asset/admin/img/favicon.png" type="image/x-icon">
-    <link href="${ctx}/asset/plugin/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/plugin/node-waves/waves.css" rel="stylesheet">
-    <link href="${ctx}/asset/plugin/animate-css/animate.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/material-icons.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/style.min.css" rel="stylesheet">
-    <link href="${ctx}/asset/admin/css/main.css" rel="stylesheet">
+    <%@ include file="admin/common/head.jsp"%>
 </head>
 
 <body class="five-zero-zero">
