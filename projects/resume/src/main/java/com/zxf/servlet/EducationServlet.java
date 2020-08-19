@@ -2,7 +2,7 @@ package com.zxf.servlet;
 
 import com.zxf.bean.Education;
 import com.zxf.service.EducationService;
-import com.zxf.service.EducationServiceImpl;
+import com.zxf.service.impl.EducationServiceImpl;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.annotation.WebServlet;
@@ -12,15 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/education/*")
-public class EducationServlet extends BaseServlet {
+public class EducationServlet extends BaseServlet<Education> {
 
-    private EducationService service = new EducationServiceImpl();
     /**
     * 获取教育列表
     * */
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setAttribute("educations", service.list());
-        request.getRequestDispatcher("/WEB-INF/page/admin/education.jsp").forward(request,response);
+        forward(request, response, "admin/education.jsp");
     }
 
     /**
@@ -34,11 +33,10 @@ public class EducationServlet extends BaseServlet {
         if (service.save(education)){
             // 保存成功
             // 重定向的 education
-            response.sendRedirect(request.getContextPath() + "/education/admin");
+            redirect(request, response, "education/admin");
         }else {
             // 保存失败
-            request.setAttribute("error","教育信息保存失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request, response, "教育信息保存失败");
         }
     }
 
@@ -53,10 +51,9 @@ public class EducationServlet extends BaseServlet {
             System.out.println(id);
         }
         if (service.remove(ids)){
-            response.sendRedirect(request.getContextPath() + "/education/admin");
+            redirect(request, response, "education/admin");
         }else {
-            request.setAttribute("error","教育信息删除失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request, response, "教育信息删除失败");
         }
     }
 

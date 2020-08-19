@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/resume/resume.iml" filepath="$PROJECT_DIR$/resume/resume.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2/xr2.iml" filepath="$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2/xr2.iml" />
     </modules>
   </component>
 </project>

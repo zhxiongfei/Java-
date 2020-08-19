@@ -1,11 +1,8 @@
 package com.zxf.servlet;
 
 import com.zxf.bean.Skill;
-import com.zxf.bean.Website;
 import com.zxf.service.SkillService;
-import com.zxf.service.SkillServiceImpl;
-import com.zxf.service.WebsiteService;
-import com.zxf.service.WebsiteServiceImpl;
+import com.zxf.service.impl.SkillServiceImpl;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.annotation.WebServlet;
@@ -15,15 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/skill/*")
-public class SkillServlet extends BaseServlet {
+public class SkillServlet extends BaseServlet<Skill> {
 
-    private SkillService service = new SkillServiceImpl();
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
         List<Skill> list = service.list();
         request.setAttribute("skills" , list);
 
         // 转发
-        request.getRequestDispatcher("/WEB-INF/page/admin/skill.jsp").forward(request, response);
+        forward(request,response,"admin/skill.jsp");
     }
 
     public void save(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -32,11 +28,10 @@ public class SkillServlet extends BaseServlet {
         if (service.save(skill)){
             // 保存成功
             // 重定向到 admin
-            response.sendRedirect(request.getContextPath() + "/skill/admin");
+            redirect(request, response, "skill/admin");
         }else {
             // 保存失败
-            request.setAttribute("error","技能信息保存失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request,response,"技能信息保存失败");
         }
     }
 
@@ -50,10 +45,9 @@ public class SkillServlet extends BaseServlet {
             ids.add(Integer.valueOf(id));
         }
         if (service.remove(ids)){
-            response.sendRedirect(request.getContextPath() + "/skill/admin");
+            redirect(request, response, "skill/admin");
         }else {
-            request.setAttribute("error","专业技能信息删除失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request,response,"专业技能信息删除失败");
         }
     }
 

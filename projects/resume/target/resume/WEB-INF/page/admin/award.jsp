@@ -161,7 +161,7 @@
 <%@include file="common/footer.jsp"%>
 
 <script>
-    $('.menu .list .skill').addClass('active')
+    $('.menu .list .award').addClass('active')
     addValidatorRules('.form-validation')
 
     const $addFormBox = $('#add-form-box')
@@ -201,7 +201,7 @@
             if (!willDelete) return
 
             // 点击了确定删除
-            window.location.href = "${ctx}/skill/remove?id=" + id;
+            window.location.href = "${ctx}/award/remove?id=" + id;
         })
     }
 

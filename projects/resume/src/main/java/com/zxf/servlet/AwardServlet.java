@@ -1,34 +1,25 @@
 package com.zxf.servlet;
 import com.zxf.bean.Award;
-import com.zxf.service.AwardService;
-import com.zxf.service.AwardServiceImpl;
+import com.zxf.util.Uploads;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
-import org.springframework.beans.propertyeditors.InputStreamEditor;
 
-import javax.lang.model.element.NestingKind;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.InputStream;
 import java.util.*;
 
 @WebServlet("/award/*")
-public class AwardServlet extends BaseServlet {
-
-    private AwardService service = new AwardServiceImpl();
+public class AwardServlet extends BaseServlet<Award> {
 
     /**
      * 获取获奖列表
      */
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setAttribute("awards", service.list());
-        request.getRequestDispatcher("/WEB-INF/page/admin/award.jsp").forward(request, response);
+        forward(request, response,"admin/award.jsp");
     }
 
     /**
@@ -45,8 +36,6 @@ public class AwardServlet extends BaseServlet {
         // 文件参数
         Map<String,FileItem> fileParams = new HashMap<>();
 
-        // 存储到数据库的文件路径
-        String image = null;
         // 遍历请求参数
         for (FileItem item : items){
             String fileName = item.getFieldName();
@@ -61,27 +50,20 @@ public class AwardServlet extends BaseServlet {
         Award bean = new Award();
         BeanUtils.populate(bean, params);
         FileItem item = fileParams.get("imageFile");
-        if (item != null) {
-            InputStream is = item.getInputStream();
-            if (is.available() > 0){
-                String filename = UUID.randomUUID() + "." + FilenameUtils.getExtension(item.getName());
-                image = "/upload/img/" + filename;
+        bean.setImage(Uploads.uploadImage(item, request, bean.getImage()));
 
-                String filePath = request.getServletContext().getRealPath(image);
-                FileUtils.copyInputStreamToFile(item.getInputStream(), new File(filePath));
-
-                bean.setImage(image);
-            }
+        // 如果图片是空字符串，就存储null
+        if (bean.getImage() != null && bean.getImage().length() == 0){
+            bean.setImage(null);
         }
 
         if (service.save(bean)) {
             // 保存成功
             // 重定向的 company
-            response.sendRedirect(request.getContextPath() + "/award/admin");
+            redirect(request,response,"award/admin");
         } else {
             // 保存失败
-            request.setAttribute("error", "获奖信息保存失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request, response, "获奖信息保存失败");
         }
     }
 
@@ -95,10 +77,9 @@ public class AwardServlet extends BaseServlet {
             ids.add(Integer.valueOf(id));
         }
         if (service.remove(ids)) {
-            response.sendRedirect(request.getContextPath() + "/company/admin");
+            redirect(request,response,"award/admin");
         } else {
-            request.setAttribute("error", "获奖成就删除失败");
-            request.getRequestDispatcher("/WEB-INF/page/error.jsp").forward(request, response);
+            forwardError(request, response, "获奖成就删除失败");
         }
     }
 }
