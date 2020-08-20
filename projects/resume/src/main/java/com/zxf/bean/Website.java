@@ -1,6 +1,8 @@
 package com.zxf.bean;
 
-public class Website extends BaseBean{
+import com.zxf.bean.base.BaseBean;
+
+public class Website extends BaseBean {
     private String footer;
 
     public String getFooter() {

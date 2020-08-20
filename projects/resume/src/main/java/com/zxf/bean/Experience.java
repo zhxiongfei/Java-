@@ -1,6 +1,9 @@
 package com.zxf.bean;
 
-public class Experience extends BaseBean{
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.zxf.bean.base.DateBean;
+
+public class Experience extends DateBean {
     private String job;
     private String intro;
     private Company company;
@@ -21,11 +24,16 @@ public class Experience extends BaseBean{
         this.intro = intro;
     }
 
+    @JsonIgnore
     public Company getCompany() {
         return company;
     }
 
     public void setCompany(Company company) {
         this.company = company;
+    }
+
+    public Integer getCompanyId(){
+        return company.getId();
     }
 }

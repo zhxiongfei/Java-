@@ -1,12 +1,9 @@
 package com.zxf.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zxf.bean.base.DateBean;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-public class Education extends BaseBean{
+public class Education extends DateBean {
     private String name;
 
     /**
@@ -22,8 +19,6 @@ public class Education extends BaseBean{
      */
     private Integer type;
     private String intro;
-    private Date beginDay;
-    private Date endDay;
 
     public String getName() {
         return name;
@@ -62,21 +57,5 @@ public class Education extends BaseBean{
 
     public void setIntro(String intro) {
         this.intro = intro;
-    }
-
-    public Date getBeginDay() {
-        return beginDay;
-    }
-
-    public void setBeginDay(Date beginDay) {
-        this.beginDay = beginDay;
-    }
-
-    public Date getEndDay() {
-        return endDay;
-    }
-
-    public void setEndDay(Date endDay) {
-        this.endDay = endDay;
     }
 }

@@ -1,8 +1,6 @@
 package com.zxf.servlet;
 
 import com.zxf.bean.Education;
-import com.zxf.service.EducationService;
-import com.zxf.service.impl.EducationServiceImpl;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.annotation.WebServlet;

@@ -1,8 +1,6 @@
 package com.zxf.servlet;
 
 import com.zxf.bean.Company;
-import com.zxf.service.CompanyService;
-import com.zxf.service.impl.CompanyServiceImpl;
 import com.zxf.util.Uploads;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.fileupload.FileItem;
@@ -24,7 +22,8 @@ public class CompanyServlet extends BaseServlet<Company> {
      * 获取公司
      * */
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        request.setAttribute("companies", service.list());
+        List<Company>list = service.list();
+        request.setAttribute("companies", list);
         forward(request,response,"admin/company.jsp");
     }
 
@@ -83,7 +82,7 @@ public class CompanyServlet extends BaseServlet<Company> {
             ids.add(Integer.valueOf(id));
         }
         if (service.remove(ids)){
-            response.sendRedirect(request.getContextPath() + "company/admin");
+            redirect(request,response,"company/admin");
         }else {
             forwardError(request,response, "公司信息删除失败");
         }

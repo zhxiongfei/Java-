@@ -1,6 +1,8 @@
 package com.zxf.bean;
 
-public class Award extends BaseBean{
+import com.zxf.bean.base.BaseBean;
+
+public class Award extends BaseBean {
     private String name;
     private String image;
     private String intro;

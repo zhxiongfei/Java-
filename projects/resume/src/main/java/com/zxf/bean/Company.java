@@ -1,6 +1,8 @@
 package com.zxf.bean;
 
-public class Company extends BaseBean{
+import com.zxf.bean.base.BaseBean;
+
+public class Company extends BaseBean {
     private String name;
     private String logo;
     private String website;

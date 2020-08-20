@@ -1,11 +1,13 @@
 package com.zxf.bean;
 
-public class Project extends BaseBean{
+import com.zxf.bean.base.DateBean;
+
+public class Project extends DateBean {
     private String name;
     private String intro;
     private String website;
-    private String image;
-    private Integer company_id;
+    private String image;   //多图用逗号隔开
+    private Company company;
 
     public String getName() {
         return name;
@@ -39,11 +41,11 @@ public class Project extends BaseBean{
         this.image = image;
     }
 
-    public Integer getCompany_id() {
-        return company_id;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setCompany_id(Integer company_id) {
-        this.company_id = company_id;
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

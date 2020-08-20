@@ -94,7 +94,7 @@
                         <span>公司信息</span>
                     </a>
                 </li>
-                <li class="expirence">
+                <li class="experience">
                     <a href="${ctx}/experience/admin">
                         <i class="material-icons">work</i>
                         <span>工作经验</span>
