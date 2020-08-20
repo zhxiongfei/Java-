@@ -1,7 +1,6 @@
 package com.zxf.util;
 
-import com.zxf.bean.Experience;
-import com.zxf.bean.Project;
+import com.zxf.bean.User;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -10,7 +9,7 @@ import java.util.Map;
 
 public class TplTest {
 
-    private static Class[] classes = {Project.class, Experience.class};
+    private static Class[] classes = {User.class};
     private static final Map<String, String> TPL_DIRS = new HashMap<>();
     private static final String BASE_DIR =
             "/Users/liuxiaoyong/Desktop/Personal/JavaEE_Learn/projects/resume/src/main/java/com/zxf";
