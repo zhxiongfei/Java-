@@ -199,3 +199,11 @@
   - md5加密password
 - 验证码功能
   - google kaptacha随机生成验证码图片
+
+
+
+## day25
+
+- 使用session不同请求间共享数据
+- cookie， session的使用
+
