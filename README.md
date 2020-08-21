@@ -206,4 +206,28 @@
 
 - 使用session不同请求间共享数据
 - cookie， session的使用
+  - cookie
+    - 数据存储在浏览器客户端
+    - 数据有大小和数量限制
+    - 适合存储一些小型，不敏感的数据
+    - 默认情况下，关闭服务器后销毁
+  - session
+    - 数据存储在服务器端
+    - 数据没有大小和数量限制
+    - 可以存储大型，敏感的数据(比如用户信息)
+    - 默认情况下，未使用30分钟后销毁
+- session内部原理
+  - 检查客户端是否有发送一个叫做 JSESSIONID的cookie
+    - 如果没有
+      - 创建一个新的session对象，并且这个session对象有一个id
+      - 这个session对象保存在服务器的内存中
+      - 在响应的时候，会添加一个cookie(JESSIONID = session兑现的id) 给客户端
+    - 如果有
+      - 返回 id 为 JSESSIONID的session对象
 
+
+
+## day26
+
+- Filter的使用 - 过滤请求
+- 用户个人信息页面

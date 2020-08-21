@@ -2,9 +2,12 @@ package com.zxf.servlet;
 
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
+import com.zxf.bean.UploadParams;
 import com.zxf.bean.User;
 import com.zxf.service.UserService;
+import com.zxf.util.Uploads;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.fileupload.FileItem;
 
 import javax.imageio.ImageIO;
 import javax.servlet.annotation.WebServlet;
@@ -20,9 +23,29 @@ import java.util.Properties;
 public class UserServlet extends BaseServlet<User> {
 
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        User user = service.list().get(0);
+        request.setAttribute("user",user);
+        forward(request,response,"admin/user.jsp");
     }
 
     public void save(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        UploadParams uploadParams = Uploads.parseRequest(request);
+        User user = new User();
+        BeanUtils.populate(user,uploadParams.getParams());
+        User loginUser = (User)request.getSession().getAttribute("user");
+        user.setPassword(loginUser.getPassword());
+        user.setEmail(loginUser.getEmail());
+
+        FileItem item = uploadParams.getFileParam("photo");
+        user.setPhoto(Uploads.uploadImage(item, request, user.getPhone()));
+
+        if (service.save(user)) {
+            // 保存成功 重定向
+            redirect(request,response,"user/admin");
+        } else {
+            // 保存失败
+            forwardError(request, response, "用户信息保存失败");
+        }
     }
 
     public void remove(HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -47,10 +70,12 @@ public class UserServlet extends BaseServlet<User> {
 
         List<User> users = ((UserService) service).get(user);
         if (users == null || users.isEmpty()){
-            // 用户名、密码有问题
+            // 登录失败
             forwardError(request,response,"用户名或密码错误");
         }else {
-            // 用户名、密码正确
+            // 登录成功
+            // 将user对象放到session中
+            session.setAttribute("user",users.get(0));
             redirect(request,response,"user/admin");
         }
     }
