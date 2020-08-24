@@ -26,7 +26,7 @@
         <div class="navbar-header">
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="#">小码哥简历管理</a>
+            <a class="navbar-brand" href="#">简历管理</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -45,17 +45,24 @@
         <!-- User Info -->
         <div class="user-info">
             <div class="image">
-                <img src="${ctx}/asset/admin/img/avatar.png" alt="User">
+                <c:choose>
+                    <c:when test="${empty user.photo}">
+                        <img src="${ctx}/asset/admin/img/noimage.png" alt="">
+                    </c:when>
+                    <c:otherwise>
+                        <img src="${ctx}/${user.photo}" alt="">
+                    </c:otherwise>
+                </c:choose>
             </div>
             <div class="info-container">
-                <div class="name">M了个J</div>
-                <div class="email">小码哥 | 讲师</div>
+                <div class="name">${user.name}</div>
+                <div class="email">${user.job}</div>
                 <div class="btn-group user-helper-dropdown">
                     <i class="material-icons" data-toggle="dropdown">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="../../front/user.html"><i class="material-icons">person</i>个人信息</a></li>
+                        <li><a href="${ctx}/user/front"><i class="material-icons">person</i>我的简历</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="../../login.html"><i class="material-icons">input</i>退出登录</a></li>
+                        <li><a href="${ctx}/page/login.jsp"><i class="material-icons">input</i>退出登录</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +84,7 @@
                     </a>
                 </li>
                 <li class="password">
-                    <a href="${ctx}/password/admin">
+                    <a href="${ctx}/user/password">
                         <i class="material-icons">lock</i>
                         <span>修改密码</span>
                     </a>

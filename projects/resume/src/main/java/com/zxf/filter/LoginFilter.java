@@ -17,7 +17,8 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse)resp;
 
         String uri = request.getRequestURI();
-        if (!uri.contains("/asset/") && uri.contains("/admin") && request.getSession().getAttribute("user") == null){
+        if (!uri.contains("/asset/") && request.getSession().getAttribute("user") == null &&
+                (uri.contains("/admin") || uri.contains("/user/password"))){
             response.sendRedirect(request.getContextPath() + "/page/login.jsp");
             return;
         }

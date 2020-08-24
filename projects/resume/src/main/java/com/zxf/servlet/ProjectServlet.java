@@ -4,7 +4,11 @@ import com.zxf.bean.Company;
 import com.zxf.bean.Project;
 import com.zxf.bean.UploadParams;
 import com.zxf.service.CompanyService;
+import com.zxf.service.UserService;
+import com.zxf.service.WebsiteService;
 import com.zxf.service.impl.CompanyServiceImpl;
+import com.zxf.service.impl.UserServiceImpl;
+import com.zxf.service.impl.WebsiteServiceImpl;
 import com.zxf.util.Uploads;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.fileupload.FileItem;
@@ -19,6 +23,8 @@ import java.util.List;
 public class ProjectServlet extends BaseServlet<Project> {
 
     private CompanyService companyService = new CompanyServiceImpl();
+    private UserService userService = new UserServiceImpl();
+    private WebsiteService websiteService = new WebsiteServiceImpl();
     /**
      * 获取项目经验
      * */
@@ -70,6 +76,16 @@ public class ProjectServlet extends BaseServlet<Project> {
         }else {
             forwardError(request,response, "公司信息删除失败");
         }
+    }
+
+    /**
+     * 前台页面
+     * */
+    public void front(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        request.setAttribute("user", userService.list().get(0));
+        request.setAttribute("footer", websiteService.list().get(0).getFooter());
+        request.setAttribute("projects", service.list());
+        forward(request, response, "front/project.jsp");
     }
 
 }

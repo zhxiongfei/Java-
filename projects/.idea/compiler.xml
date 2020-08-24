@@ -21,9 +21,9 @@
       <module name="15_maven_tomcat" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
-      <module name="resume" target="12" />
+      <module name="resume" target="8" />
       <module name="TestCookie" target="8" />
-      <module name="TestCookie1" target="1.5" />
+      <module name="TestCookie1" target="8" />
       <module name="xr2" target="8" />
     </bytecodeTargetLevel>
   </component>

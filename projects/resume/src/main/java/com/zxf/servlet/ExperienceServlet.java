@@ -1,8 +1,13 @@
 package com.zxf.servlet;
 import com.zxf.bean.Company;
 import com.zxf.bean.Experience;
+import com.zxf.bean.Website;
 import com.zxf.service.CompanyService;
+import com.zxf.service.UserService;
+import com.zxf.service.WebsiteService;
 import com.zxf.service.impl.CompanyServiceImpl;
+import com.zxf.service.impl.UserServiceImpl;
+import com.zxf.service.impl.WebsiteServiceImpl;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +19,8 @@ import java.util.*;
 public class ExperienceServlet extends BaseServlet<Experience> {
 
     private CompanyService companyService = new CompanyServiceImpl();
+    private UserService userService = new UserServiceImpl();
+    private WebsiteService websiteService = new WebsiteServiceImpl();
 
     /**
      * 获取工作经验列表
@@ -58,4 +65,16 @@ public class ExperienceServlet extends BaseServlet<Experience> {
             forwardError(request, response, "工作经验删除失败");
         }
     }
+
+    /**
+     * 前台页面
+     */
+    public void front(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        request.setAttribute("user", userService.list().get(0));
+        request.setAttribute("footer", websiteService.list().get(0).getFooter());
+        request.setAttribute("experiences", service.list());
+        forward(request,response,"front/experience.jsp");
+    }
+
+
 }
