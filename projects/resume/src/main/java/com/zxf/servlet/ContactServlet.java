@@ -1,6 +1,10 @@
 package com.zxf.servlet;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zxf.bean.Contact;
+import com.zxf.bean.ContactListParam;
+import com.zxf.bean.ContactListResult;
+import com.zxf.service.ContactService;
 import com.zxf.service.UserService;
 import com.zxf.service.WebsiteService;
 import com.zxf.service.impl.UserServiceImpl;
@@ -10,7 +14,9 @@ import org.apache.commons.beanutils.BeanUtils;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet("/contact/*")
 public class ContactServlet extends BaseServlet {
@@ -22,8 +28,12 @@ public class ContactServlet extends BaseServlet {
      *
      * */
     public void admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        List<Contact> list = service.list();
-        request.setAttribute("contact",service.list());
+        ContactListParam param = new ContactListParam();
+        BeanUtils.populate(param, request.getParameterMap());
+
+        ContactListResult res = ((ContactService) service).list(param);
+
+        request.setAttribute("result",((ContactService) service).list(param));
         // 转发
         forward(request,response,"admin/contact.jsp");
     }
@@ -51,6 +61,24 @@ public class ContactServlet extends BaseServlet {
             // 保存失败
             forwardError(request, response, "留言信息保存失败");
         }
+    }
+
+    /**
+     * AJAX 异步请求
+     * 已读
+     * */
+    public void read(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        Integer id = Integer.valueOf(request.getParameter("id"));
+        Map<String,Object> result = new HashMap<>();
+        if (((ContactService)service).read(id)){
+            result.put("success",true);
+            result.put("msg","更新成功");
+        }else {
+            result.put("success",false);
+            result.put("msg","更新失败");
+        }
+        response.setContentType("text/json; charset=UTF-8");
+        response.getWriter().write(new ObjectMapper().writeValueAsString(result));
     }
 
     /**

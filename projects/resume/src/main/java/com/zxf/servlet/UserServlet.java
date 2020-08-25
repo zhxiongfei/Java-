@@ -1,5 +1,6 @@
 package com.zxf.servlet;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
 import com.zxf.bean.UploadParams;
@@ -18,14 +19,17 @@ import org.apache.commons.fileupload.FileItem;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.tree.RowMapper;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 @WebServlet("/user/*")
@@ -87,28 +91,38 @@ public class UserServlet extends BaseServlet<User> {
      */
     public void login(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
+        response.setContentType("text/json; charset=UTF-8");
+        Map<String,Object> result = new HashMap<>();
+
         // 检查验证码
         String captcha = request.getParameter("captcha").toLowerCase();
         HttpSession session = request.getSession();
         if (!captcha.equals(session.getAttribute("code"))){
-            forwardError(request,response,"验证码错误");
-            return;
-        }
-
-        // 检查用户名、密码
-        User user = new User();
-        BeanUtils.populate(user, request.getParameterMap());
-
-        List<User> users = ((UserService) service).get(user);
-        if (users == null || users.isEmpty()){
-            // 登录失败
-            forwardError(request,response,"用户名或密码错误");
+            result.put("success",false);
+            result.put("msg","验证码错误");
         }else {
-            // 登录成功
-            // 将user对象放到session中
-            session.setAttribute("user",users.get(0));
-            redirect(request,response,"user/admin");
+            // 检查用户名、密码
+            User user = new User();
+            BeanUtils.populate(user, request.getParameterMap());
+
+            List<User> users = ((UserService) service).get(user);
+            if (users == null || users.isEmpty()){
+                // 登录失败
+                result.put("success",false);
+                result.put("msg","用户名或密码错误");
+            }else {
+                // 登录成功
+                // 将user对象放到session中
+                session.setAttribute("user",users.get(0));
+                result.put("success",true);
+            }
         }
+
+        Cookie cookie = new Cookie("JSESSIONID",request.getSession().getId());
+        cookie.setMaxAge(3600 * 24 * 7);
+        response.addCookie(cookie);
+
+        response.getWriter().write(new ObjectMapper().writeValueAsString(result));
     }
 
     /**
