@@ -2,9 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91d1e4ba-ac2d-46d9-b4d2-fbd1b0dd226a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis-parent/31/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis-parent/31/mybatis-parent-31.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis-parent/31/mybatis-parent-31.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis/3.5.5/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis/3.5.5/mybatis-3.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis/3.5.5/mybatis-3.5.5.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis/3.5.5/mybatis-3.5.5.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.m2/repository/org/mybatis/mybatis/3.5.5/mybatis-3.5.5.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/01_MyBatis01_基本使用.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/main/java/com/zxf/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/main/java/com/zxf/bean/BaseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/main/java/com/zxf/bean/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/main/resources/mapper/skill.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_MyBatis01_基本使用/src/test/java/com/zxf/SkillTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxf/filter/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxf/listener/ContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_alibaba_druid_1_1_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_beans_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_core_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jcl_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_tx_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestCookie1/TestCookie1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestCookie1/TestCookie1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestCookie1/target/classes/com/zxf/servlet/Test1Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestCookie1/target/classes/com/zxf/servlet/Test2Servlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxf/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxf/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Award.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Company.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/ContactListParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/ContactListResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Education.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Experience.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/UploadParams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/Website.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/base/BaseBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/bean/base/DateBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/AwardDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/BaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/CompanyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/ContactDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/EducationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/ExperienceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/ProjectDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/SkillDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/WebsiteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/AwardDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/BaseDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/CompanyDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/ContactDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/EducationDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/ExperienceDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/ProjectDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/SkillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/dao/impl/WebsiteDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/AwardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/CompanyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/EducationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/ExperienceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/ProjectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/SkillService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/WebsiteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/AwardServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/BaseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/CompanyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/ContactServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/EducationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/ExperienceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/ProjectServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/SkillServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/service/impl/WebsiteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/AwardServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/BaseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/CompanyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/ContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/EducationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/ExperienceServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/ProjectServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/SkillServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/servlet/WebsiteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/util/Strings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxf/util/Uploads.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxf/util/ContactTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxf/util/StringsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxf/util/TplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +161,8 @@
       <workItem from="1597389393768" duration="19000" />
       <workItem from="1598069827063" duration="54000" />
       <workItem from="1598087402372" duration="3000" />
+      <workItem from="1598425971195" duration="10000" />
+      <workItem from="1598426027684" duration="4000" />
     </task>
     <servers />
   </component>

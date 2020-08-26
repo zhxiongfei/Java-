@@ -2,6 +2,8 @@
 
 
 
+# 第二季
+
 ## day 01
 
 - tomcat 环境搭建
@@ -252,4 +254,46 @@
 
 - 使用 AJAX 发送异步请求
 - 修改 登录请求为  AJAX 提高体验
+
+
+
+# 第三季
+
+## day01
+
+- 数据库事务 (DataBase Transaction)
+  - 数据库事务，简称事务。
+    - 如果将N个数据库操作放到同一个事务中，那么这N个操作最终要么全部生效，要么全都不生效
+  - 事务的使用
+    - 开启事务 : STAET TRANSACTIOn
+    - 回滚事务 : ROLLBACK
+      - 只要事务中的一个操作失败，那么其他所有操作都需要回滚(rollback), 回到开始事物之前的状态
+    - 提交事务 : COMMIT
+      - 如果事务中的所有操作都成功了，就提交事务，让这些操作真正生效
+  - 事务的四大特征 (ACID)
+    - 原子性 (Atomicity)
+      - 事务作为一个整体被执行，包含在其中的对数据库的操作要么全部被执行，要么都不执行
+    - 一致性 (Consistency)
+      - 事务应确保数据库的状态从一个一致状态转变为另一个一致状态。一致状态的含义是数据库中的数据应满足完整性约束
+    - 隔离性 (Isolation)
+      - 多个事务并发执行时，一个事务的执行不影响其他事务的执行
+    - 持久性 (Durability)
+      - 已被提交的事务对数据库的修改应该永久保存在数据库中
+  - JDBC事务管理
+    - 在JDBC中，使用 Connection 对象来管理事务
+      - setAutoCommit(false) : 开启事务
+      - rollback() : 回滚事务
+      - commit() : 提交事务
+  - MyBatis
+    - MyBatis是数据持久层(Dao层)的框架
+      - 封装了JDBC的很多操作细节，让开发者简化了DAO层的代码
+    - 使用步骤 ：
+      1. 添加依赖
+      2. 核心文件配置 (mybatis-config.xml)
+      3. 创建session
+      4. 配置实体映射
+      5. 查询
+      6. 多表关联查询
+         1. 将 resultType设置为 Map, HashMap,LinkedHashMap
+         2. 将resultType设置为JavaBean
 
