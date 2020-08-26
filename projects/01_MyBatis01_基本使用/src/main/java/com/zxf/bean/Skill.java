@@ -4,6 +4,13 @@ public class Skill extends BaseBean {
     private String name;
     private Integer level;
 
+    public Skill() {}
+
+    public Skill(String name, Integer level) {
+        this.name = name;
+        this.level = level;
+    }
+
     public String getName() {
         return name;
     }

@@ -12,15 +12,41 @@
 <!--        <setting name="logImpl" value="STDOUT_LOGGING" />-->
     </settings>
 
+    <!--  别名  -->
+    <typeAliases>
+<!--        <typeAlias type="com.zxf.bean.Skill" alias="skill" />-->
+
+        <typeAlias type="com.zxf.common.DruidDataSourceFactory" alias="DRUID"/>
+
+<!--        这个包下的所有类，都会起一个别名，全类名的最后一个单词-->
+        <package name="com.zxf.bean"/>
+    </typeAliases>
+
     <environments default="development">
         <!--  开发环境(调试阶段)  -->
         <environment id="development">
             <!--  采取JDBC的事物管理方法  -->
             <transactionManager type="JDBC"></transactionManager>
             <!--  采取连接池的方式连接  -->
+            <dataSource type="DRUID">
+                <property name="driveClassName" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+                <property name="initialSize" value="5"/>
+                <property name="maxActive" value="10"/>
+                <property name="maxWait" value="5000"/>
+            </dataSource>
+        </environment>
+
+        <!--  开发环境(调试阶段)  使用自带的连接池  -->
+        <environment id="development2">
+            <!--  采取JDBC的事物管理方法  -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--  采取连接池的方式连接  -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/resume"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>
@@ -33,7 +59,7 @@
             <!--  采取连接池的方式连接  -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/resume"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>

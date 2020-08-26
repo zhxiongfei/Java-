@@ -3,16 +3,90 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="skill">
-    <select id="list" resultType="com.zxf.bean.Skill">
+    <select id="list" resultType="skill">
         SELECT * FROM skill
     </select>
 
-    <select id="get" resultType="com.zxf.bean.Skill">
+    <select id="get" resultType="skill">
         SELECT * FROM skill WHERE id = #{id}
     </select>
 
-    <select id="list2" resultType="com.zxf.bean.Skill">
+    <select id="list2" resultType="skill">
         SELECT * FROM skill WHERE id > #{id} OR LEVEL > #{level} OR name LIKE #{name}
     </select>
+
+    <insert id="insert" parameterType="skill">
+        INSERT INTO skill(name, level) VALUES (#{name},#{level});
+    </insert>
+
+    <insert id="insert2" parameterType="skill">
+        INSERT INTO skill(name, level) VALUES (#{name},#{level});
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+    </insert>
+
+    <update id="update" parameterType="skill">
+        UPDATE skill SET name = #{name}, level = #{level} WHERE id = #{id}
+    </update>
+
+    <update id="delete" parameterType="int">
+        DELETE FROM skill WHERE id = #{id}
+    </update>
+
+    <select id="dynamicSQL" parameterType="Map" resultType="skill">
+        SELECT * FROM skill WHERE 1=1
+        <if test="id != null">
+            AND id > #{id}
+        </if>
+
+        <if test="name != null">
+            AND name LIKE #{name}
+        </if>
+
+        <if test="level != null">
+            AND level &lt; #{level};
+        </if>
+
+    </select>
+
+    <select id="dynamicSQL2" parameterType="Map" resultType="skill">
+        SELECT * FROM skill
+        <where>
+            <if test="id != null">
+                AND id > #{id}
+            </if>
+            <if test="name != null">
+                AND name LIKE #{name}
+            </if>
+            <if test="level != null">
+                AND level &lt; #{level};
+            </if>
+        </where>
+    </select>
+
+    <insert id="batchInsert" parameterType="List">
+        INSERT INTO skill(name, level) VALUES
+        <foreach collection="list" item="skill" separator=",">
+            (#{skill.name},#{skill.level})
+        </foreach>
+    </insert>
+
+<!--  批量删除  -->
+    <delete id="batchDelete" parameterType="List">
+        DELETE FROM skill WHERE id IN (
+        <foreach collection="list" item="id" separator=",">
+            #{id}
+        </foreach>
+        )
+    </delete>
+
+    <!--  批量删除2  -->
+    <delete id="batchDelete2" parameterType="List">
+        DELETE FROM skill WHERE id IN
+        <foreach collection="list" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 
 </mapper>

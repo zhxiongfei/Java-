@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import java.io.Reader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,8 +73,103 @@ public class SkillTest {
             param.setName("%J%");
             List<Skill> skills = session.selectList("skill.list2", param);
             for (Skill skill : skills) {
-//                System.out.println(skill);
+                System.out.println(skill);
             };
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void insert() throws Exception{
+        try(SqlSession session = MyBatises.openSession(true)){
+            Skill param = new Skill("SpringMVC", 777);
+            session.insert("skill.insert2", param);
+
+            System.out.println(param.getId());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void update() throws Exception{
+        try(SqlSession session = MyBatises.openSession(true)){
+            Skill param = new Skill("iOS", 666);
+            param.setId(10);
+            session.insert("skill.update", param);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void delete() throws Exception{
+        try(SqlSession session = MyBatises.openSession(true)){
+            session.insert("skill.delete", 22);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void dynamicSQL() throws Exception{
+        try(SqlSession session = MyBatises.openSession(true)){
+            Map<String,Object> params = new HashMap<>();
+            params.put("id",8);
+            params.put("name","%s%");
+            params.put("level",600);
+
+            List<Skill> skills = session.selectList("skill.dynamicSQL",params);
+            for (Skill skill : skills) {
+                System.out.println(skill);
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void dynamicSQL2() throws Exception{
+        try(SqlSession session = MyBatises.openSession()){
+            Map<String,Object> params = new HashMap<>();
+            params.put("id",8);
+            params.put("name","%s%");
+            params.put("level",600);
+
+            List<Skill> skills = session.selectList("skill.dynamicSQL2",params);
+            for (Skill skill : skills) {
+                System.out.println(skill);
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void batchInsert() throws Exception{
+        try(SqlSession session = MyBatises.openSession()){
+            List<Skill> skills = new ArrayList<>();
+            skills.add(new Skill("Java", 100));
+            skills.add(new Skill("Java", 200));
+            skills.add(new Skill("Java", 300));
+            skills.add(new Skill("Java", 400));
+            session.insert("skill.batchInsert", skills);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void batchDelete() throws Exception{
+        try(SqlSession session = MyBatises.openSession()){
+            List<Integer> skills = new ArrayList<>();
+            skills.add(17);
+            session.delete("skill.batchDelete2", skills);
+            session.commit();
         }catch (Exception e){
             e.printStackTrace();
         }
