@@ -16,11 +16,20 @@
     <typeAliases>
 <!--        <typeAlias type="com.zxf.bean.Skill" alias="skill" />-->
 
-        <typeAlias type="com.zxf.common.DruidDataSourceFactory" alias="DRUID"/>
+<!--    连接池别名    -->
+        <typeAlias type="com.zxf.common.DruidDataSourceFactory" alias="DRUID" />
 
-<!--        这个包下的所有类，都会起一个别名，全类名的最后一个单词-->
+<!--    这个包下的所有类，都会起一个别名，全类名的最后一个单词  -->
         <package name="com.zxf.bean"/>
     </typeAliases>
+
+<!--  pagehelper拦截器  -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--  分页合理化 -->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
 
     <environments default="development">
         <!--  开发环境(调试阶段)  -->
@@ -29,7 +38,7 @@
             <transactionManager type="JDBC"></transactionManager>
             <!--  采取连接池的方式连接  -->
             <dataSource type="DRUID">
-                <property name="driveClassName" value="com.mysql.jdbc.Driver"/>
+                <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>

@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis01_基本使用/pom.xml" />
         <option value="$PROJECT_DIR$/resume/pom.xml" />
+        <option value="$PROJECT_DIR$/02_MyBatis02_多表关系/pom.xml" />
       </list>
     </option>
   </component>

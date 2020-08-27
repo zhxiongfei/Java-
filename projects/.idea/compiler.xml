@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="01_MyBatis01_基本使用" />
+        <module name="02_MyBatis02_多表关系" />
         <module name="resume" />
+        <module name="01_MyBatis01_基本使用" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01_MyBatis" target="8" />
       <module name="01_MyBatis01_基本使用" target="8" />
+      <module name="02_MyBatis02_多表关系" target="8" />
       <module name="10_maven" target="8" />
       <module name="11_maven_idea" target="8" />
       <module name="11_maveweb" target="8" />

@@ -26,6 +26,13 @@
         </selectKey>
     </insert>
 
+    <insert id="insert3"
+            useGeneratedKeys="true"
+            keyProperty="id"
+            parameterType="skill">
+        INSERT INTO skill(name, level) VALUES (#{name},#{level});
+    </insert>
+
     <update id="update" parameterType="skill">
         UPDATE skill SET name = #{name}, level = #{level} WHERE id = #{id}
     </update>

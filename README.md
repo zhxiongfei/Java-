@@ -297,3 +297,35 @@
          1. 将 resultType设置为 Map, HashMap,LinkedHashMap
          2. 将resultType设置为JavaBean
 
+
+
+## day02
+
+- MyBatis 使用 Druid 连接池
+- MyBatis 动态SQL
+- 批量删除 / 批量上传
+- 第三方日志输出库, logback使用
+
+
+
+
+
+## day03
+
+- 查询主键的另一种方式
+- 设置 别名 typeAliases
+- 数据库分页查询
+  - pageHelper 的使用
+    - [pageHelper Maven 导入失败的解决方法](https://www.cnblogs.com/Ye-ye/p/12775066.html)
+
+
+
+## day04
+
+### 多表级联查询
+
+- 数据库的表之间可能存在一定的关系
+  - 一对多 / 多对一
+  - 一对一
+  - 多对多
+    - 联合主键

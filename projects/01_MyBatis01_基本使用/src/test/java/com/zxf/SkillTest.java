@@ -1,5 +1,6 @@
 package com.zxf;
 
+import com.github.pagehelper.PageHelper;
 import com.zxf.bean.Skill;
 import com.zxf.utils.MyBatises;
 import org.apache.ibatis.io.Resources;
@@ -84,7 +85,7 @@ public class SkillTest {
     public void insert() throws Exception{
         try(SqlSession session = MyBatises.openSession(true)){
             Skill param = new Skill("SpringMVC", 777);
-            session.insert("skill.insert2", param);
+            session.insert("skill.insert3", param);
 
             System.out.println(param.getId());
         }catch (Exception e){
@@ -170,6 +171,19 @@ public class SkillTest {
             skills.add(17);
             session.delete("skill.batchDelete2", skills);
             session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void page() throws Exception{
+        try(SqlSession session = MyBatises.openSession()){
+            PageHelper.startPage(2,5);
+            List<Skill> skills = session.selectList("skill.list");
+            for (Skill skill : skills) {
+                System.out.println(skill);
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
