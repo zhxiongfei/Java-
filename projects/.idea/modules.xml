@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_MyBatis01_基本使用/01_MyBatis01_基本使用.iml" filepath="$PROJECT_DIR$/01_MyBatis01_基本使用/01_MyBatis01_基本使用.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_MyBatis02_多表关系/02_MyBatis02_多表关系.iml" filepath="$PROJECT_DIR$/02_MyBatis02_多表关系/02_MyBatis02_多表关系.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_MyBatis03_延迟加载/03_MyBatis03_延迟加载.iml" filepath="$PROJECT_DIR$/03_MyBatis03_延迟加载/03_MyBatis03_延迟加载.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_MyBatis04_缓存/04_MyBatis04_缓存.iml" filepath="$PROJECT_DIR$/04_MyBatis04_缓存/04_MyBatis04_缓存.iml" />
       <module fileurl="file://$PROJECT_DIR$/resume/resume.iml" filepath="$PROJECT_DIR$/resume/resume.iml" />
     </modules>
   </component>

@@ -329,3 +329,84 @@
   - 一对一
   - 多对多
     - 联合主键
+
+
+
+## day05
+
+- 立即加载
+  - 一条sql语句
+  - 可能会造成资源的浪费
+  - 如果不是集合类型，比较小的对象，可以考虑立即加载
+
+- 延迟加载
+
+  - 多条sql语句
+  - 不会造成资源浪费
+  - 如果是集合类型，使用延迟加载
+
+- 全局延迟加载开关
+
+  - mybatis-config.xml中添加配置
+
+    ```sql
+    <!-- 所有设置了 select属性 的关联对象延迟加载 -->
+    <setting name="lazyLoadingEnabled" value="true"/>
+    ```
+
+- 缓存
+
+  - 是指为了减少数据库直接访问次数，提高访问效率，而临时存储在内存中的数据。
+  - 适合存放到缓存中的数据
+    - 经常查询，不经常改变，数据的正确性对最终结果影响不大
+  - 举例 : 不适合放在缓存中的数据:
+    - 商品库存，价格，汇率等
+
+- MyBatis缓存
+
+  - 用于缓存 select 的结果，分为一级缓存和二级缓存
+
+  - 一级缓存
+
+    - 一级缓存存放在 SqlSession对象中
+    - 同一个Sqlsession的select共享缓存
+    - 所以当关闭Sqlsession时，缓存就失效了
+    - 执行 insert , update , delete, commit等方法时，会自动清理一级缓存
+    - 由于在很多时候，每次查询用的都是不同的SqlSession，所以一级缓存的命中率并不高
+
+  - 二级缓存
+
+    - 为了提高缓存的命中率，可以考虑开启MyBatis的二级缓存， 它是namespace(mapper)级别的缓存
+
+      - 同一个namespace下的select共享数据
+      - 默认情况下，namespace下update，insert，delete执行成功时，会自动清理二级缓存
+      - 当调用SqlSession的close方法时，会将查询结果放入二级缓存
+
+    - 开启二级缓存
+
+      - 在mybatis-config.xml 中配置
+
+        ```xml
+        <!-- 开启二级缓存 -->
+        <setting name="cacheEnabled" value="true"></setting>
+        ```
+
+      - 在映射文件的mapper中添加 cache 标签, 默认会缓存映射文件中的所有select结果
+
+        ```xml
+        <cache />
+        ```
+
+      - cache标签的常用属性
+
+        - size : 缓存多少个存储结果 (单个对象 / 一个列表) 的引用，默认值是1024
+        - eviction : 当缓存数量超过size时的清除策略. 可选值 : LRU,FIFO,SOFT,WEAK
+        - flushInterval : 每隔多少秒清楚一个缓存，默认不会定期清除缓存
+        - readOnly : true代表缓存的是原对象的引用, false代表缓存的是原对象的序列化后的拷贝对象
+          - 所以false要求实现 Serializable 接口。默认是false
+
+      - useCache, flushCache
+
+        - 可以通过设置 useCache属性来决定某个select是否需要开启二级缓存
+        - 可以通过设置 flushCache属性来决定某个操作之后，是否需要清除缓存
+
