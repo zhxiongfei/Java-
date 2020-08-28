@@ -36,6 +36,8 @@
     <mappers>
         <mapper resource="mappers/person.xml"></mapper>
         <mapper resource="mappers/idCard.xml"></mapper>
+        <mapper resource="mappers/bankCard.xml"></mapper>
+        <mapper resource="mappers/job.xml"></mapper>
     </mappers>
 
 </configuration>

@@ -1,6 +1,6 @@
 package com.zxf.test;
 
-import com.zxf.bean.IdCard;
+import com.zxf.bean.BankCard;
 import com.zxf.bean.Person;
 import com.zxf.utils.MyBatises;
 import org.apache.ibatis.session.SqlSession;
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class OneToOne {
+public class OneToMany {
     @Test
     public void personList(){
         try (SqlSession session = MyBatises.openSession()){
@@ -26,18 +26,18 @@ public class OneToOne {
     }
 
     @Test
-    public void idCardList(){
+    public void bankCardList(){
         try (SqlSession session = MyBatises.openSession()){
-            List<IdCard> cards = session.selectList("idCard.list");
-            System.out.println(cards);
+            List<BankCard> bankCards = session.selectList("bankCard.list");
+            System.out.println(bankCards);
         }
     }
 
     @Test
-    public void cardsGet(){
+    public void bankCardGet(){
         try (SqlSession session = MyBatises.openSession()){
-            IdCard card = session.selectOne("idCard.get", 1);
-            System.out.println(card);
+            BankCard bankCard = session.selectOne("bankCard.get", 1);
+            System.out.println(bankCard);
         }
     }
 }

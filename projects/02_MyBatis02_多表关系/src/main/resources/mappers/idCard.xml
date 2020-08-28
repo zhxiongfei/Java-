@@ -18,11 +18,8 @@
         <result property="no" column="no" />
         <result property="address" column="address" />
         <association property="person" javaType="com.zxf.bean.Person">
-            <id property="id" column="person_id" />
-            <result property="no" column="ic_no" />
-            <result property="name" column="person_name" />
+            <result property="name" column="p_name" />
         </association>
-
     </resultMap>
 
     <select id="list" resultMap="rmList">

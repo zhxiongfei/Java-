@@ -2,24 +2,27 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="idCard">
+<mapper namespace="job">
 
     <sql id="sqlListAll">
         SELECT
-	        ic.*,
+	        j.*,
+	        p.id p_id,
 	        p.name p_name
         FROM
-	        id_card ic
-        JOIN person p ON p.id = ic.person_id
+	        job j
+	        LEFT JOIN person_job pj ON j.id = pj.job_id
+	        LEFT JOIN person p ON p.id = pj.person_id
     </sql>
 
-    <resultMap id="rmList" type="com.zxf.bean.IdCard">
+    <resultMap id="rmList" type="com.zxf.bean.Job">
         <id property="id" column="id" />
-        <result property="no" column="no" />
-        <result property="address" column="address" />
-        <association property="person" javaType="com.zxf.bean.Person">
+        <result property="name" column="name" />
+        <result property="duty" column="duty" />
+        <collection property="persons" ofType="com.zxf.bean.Person">
+            <id property="id" column="p_id" />
             <result property="name" column="p_name" />
-        </association>
+        </collection>
     </resultMap>
 
     <select id="list" resultMap="rmList">
@@ -27,7 +30,7 @@
     </select>
 
     <select id="get" parameterType="int" resultMap="rmList">
-        <include refid="sqlListAll" /> WHERE ic.id = #{id}
+        <include refid="sqlListAll" /> WHERE j.id = #{id}
     </select>
 
 </mapper>
