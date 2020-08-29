@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/02_MyBatis02_多表关系/02_MyBatis02_多表关系.iml" filepath="$PROJECT_DIR$/02_MyBatis02_多表关系/02_MyBatis02_多表关系.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_MyBatis03_延迟加载/03_MyBatis03_延迟加载.iml" filepath="$PROJECT_DIR$/03_MyBatis03_延迟加载/03_MyBatis03_延迟加载.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_MyBatis04_缓存/04_MyBatis04_缓存.iml" filepath="$PROJECT_DIR$/04_MyBatis04_缓存/04_MyBatis04_缓存.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_MyBatis05_dao01/05_MyBatis05_dao01.iml" filepath="$PROJECT_DIR$/05_MyBatis05_dao01/05_MyBatis05_dao01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_MyBatis06_dao02/06_MyBatis06_dao2.iml" filepath="$PROJECT_DIR$/06_MyBatis06_dao02/06_MyBatis06_dao2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_MyBatis07_dao03/07_MyBatis07_dao03.iml" filepath="$PROJECT_DIR$/07_MyBatis07_dao03/07_MyBatis07_dao03.iml" />
       <module fileurl="file://$PROJECT_DIR$/resume/resume.iml" filepath="$PROJECT_DIR$/resume/resume.iml" />
     </modules>
   </component>

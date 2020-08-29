@@ -1,4 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Aug 27 12:54:53 CST 2020
-@default-aliyun-https\://maven.aliyun.com/repository/public/.lastUpdated=1598504093156
-https\://maven.aliyun.com/repository/public/.error=Could not transfer artifact org.mybatis\:mybatis\:jar\:sources\:3.5.5 from/to aliyun (https\://maven.aliyun.com/repository/public)\: Transfer failed for https\://maven.aliyun.com/repository/public/org/mybatis/mybatis/3.5.5/mybatis-3.5.5-sources.jar
