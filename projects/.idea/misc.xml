@@ -18,14 +18,8 @@
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
-        <option value="$PROJECT_DIR$/01_MyBatis01_基本使用/pom.xml" />
         <option value="$PROJECT_DIR$/resume/pom.xml" />
-        <option value="$PROJECT_DIR$/02_MyBatis02_多表关系/pom.xml" />
-        <option value="$PROJECT_DIR$/03_MyBatis03_延迟加载/pom.xml" />
-        <option value="$PROJECT_DIR$/04_MyBatis04_缓存/pom.xml" />
-        <option value="$PROJECT_DIR$/05_MyBatis05_dao01/pom.xml" />
-        <option value="$PROJECT_DIR$/06_MyBatis06_dao02/pom.xml" />
-        <option value="$PROJECT_DIR$/07_MyBatis07_dao03/pom.xml" />
+        <option value="$PROJECT_DIR$/08_Spring01_IoC/pom.xml" />
       </list>
     </option>
   </component>

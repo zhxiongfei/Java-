@@ -410,3 +410,35 @@
         - 可以通过设置 useCache属性来决定某个select是否需要开启二级缓存
         - 可以通过设置 flushCache属性来决定某个操作之后，是否需要清除缓存
 
+
+
+## day06
+
+### 使用MyBatis实现dao层
+
+- 使用MyBatis实现dao层的几种方式
+  - 自定义dao实现类，在实现中调用SqlSession的相关方法(使用XML)
+  - 只定义dao接口类，SqlSession的getMapper方法生成dao的代理对象(使用XML)
+  - 只定义dao接口类，SqlSession的getMapper方法生成dao的代理对象(使用注解)
+    - 目前注解的功能并没有XML强大，所以也可以使用XML + 注解混合使用
+
+
+
+
+
+## day07
+
+### Spring框架
+
+- Spring框架可以算是Java开发中最常用的框架，功能非常强大
+- Spring框架的几个核心概念
+  - IoC : Inversion of Control,控制反转
+  - DI : Dependency Injection , 依赖注入
+  - AOP: Aspect Oriented Prigramming, 面向切片编程
+
+### Spring基本使用
+
+- 添加Maven依赖
+- 新建一个核心配置文件 : applicacitonContext.xml
+- **解耦**, 充当**工厂**角色
+
