@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/resume/pom.xml" />
         <option value="$PROJECT_DIR$/08_Spring01_IoC/pom.xml" />
+        <option value="$PROJECT_DIR$/09_Spring02_依赖注入/pom.xml" />
+        <option value="$PROJECT_DIR$/10_Spring03_复杂对象/pom.xml" />
       </list>
     </option>
   </component>

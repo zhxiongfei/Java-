@@ -442,3 +442,45 @@
 - 新建一个核心配置文件 : applicacitonContext.xml
 - **解耦**, 充当**工厂**角色
 
+
+
+## day08
+
+### IoC 
+
+- Inversion of Control
+- 控制反转
+- 对象创建的权利反转
+- 对象创建的控制权交给了 IoC容器
+
+### DI
+
+- Dependency Injection 依赖注入
+- 比如， Spring把 dao 对象注入到 Service属性中
+- 常用的注入内容分为3大类
+  - bean (自定义类型)
+  - 基本类型 (int , String, BigDecimal 等)
+  - 集合类型 (数组，Map，List，Set，Properties)
+- 常见的注入方式有2种
+  - 基于setter (属性)
+  - 基于 constructor (构造方法)
+
+
+
+
+
+## day09
+
+### Spring 依赖注入创建复杂对象
+
+- 静态工厂
+  - 使用**factory类对象**创建对象
+  - 缺点是**无法注入值**
+- 实例工厂
+  - 使用 **factory实例对象**创建对象
+  - **可以注入值**
+- FactoryBean
+  - Spring 提供的方式
+  - FactoryBean类实现 **FactoryBean**接口
+    - 并实现接口中两个方法
+

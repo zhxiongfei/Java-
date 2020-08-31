@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/08_Spring01_IoC/08_Spring01_IoC.iml" filepath="$PROJECT_DIR$/08_Spring01_IoC/08_Spring01_IoC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_Spring02_依赖注入/09_Spring02_依赖注入.iml" filepath="$PROJECT_DIR$/09_Spring02_依赖注入/09_Spring02_依赖注入.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_Spring03_复杂对象/10_Spring03_复杂对象.iml" filepath="$PROJECT_DIR$/10_Spring03_复杂对象/10_Spring03_复杂对象.iml" />
       <module fileurl="file://$PROJECT_DIR$/resume/resume.iml" filepath="$PROJECT_DIR$/resume/resume.iml" />
     </modules>
   </component>
