@@ -484,3 +484,55 @@
   - FactoryBean类实现 **FactoryBean**接口
     - 并实现接口中两个方法
 
+
+
+## day10
+
+### SpEL表达式
+
+(Spring Expression Language)
+
+### scope
+
+- 可以通过scope属性控制bean是否单例
+  - singleton ：单例
+  - 通过同一个**id**值，在同一个**IoC容器**中获取的永远是同一个单例
+  - 在IoC容器创建的时候，就会创建bean，可以设置**lazy-init : true**修改创建时机
+- prototype : 非单例。每次getBean时创建一次bean
+
+
+
+## day11
+
+### converter基本使用
+
+- Spring已经内置了基本的类型转换功能，比如:
+  - String转int, String转Date (支持yyyy/MM/dd格式)
+- 自定义 Convert
+  - 自定义 DateConvert类，实现Converter接口
+  - xml配置文件中注册Converter 
+
+
+
+## day12
+
+### 整合MyBatis
+
+- MyBatis中比较繁琐的地方
+  - 如果mapper文件比较多，就需要配置很多的mapper文件路径
+  - 需要事先创建 SqlSessionFactory 对象
+  - 每次需要调用 openSession 方法 (最后还要close掉session)
+- 整合MyBatis
+  - pom.xml 添加依赖
+  - 配置 Spring核心配置文件 applicationContext.xml
+    - 配置数据源(druid)
+    - 配置 SqlSessionFactoryBean
+    - 配置映射文件的位置
+    - 配置扫描dao
+    - 设置sqlSessionFactory的id
+    - 设置dao的包
+
+
+
+## day13
+

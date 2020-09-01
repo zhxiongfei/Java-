@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -23,6 +24,13 @@
         <property name="url" value="jdbc:mysql://localhost:3306/test_mybatis" />
         <property name="username" value="root" />
         <property name="password" value="root" />
+    </bean>
+
+    <bean id="dog" class="com.zxf.domain.Dog" />
+    <bean id="person" class="com.zxf.domain.Person">
+        <property name="dog" value="#{dog}" />
+        <property name="name" value="#{dog.testName}" />
+        <property name="age" value="#{dog.testAge}" />
     </bean>
 
 </beans>

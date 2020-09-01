@@ -18,10 +18,8 @@
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
-        <option value="$PROJECT_DIR$/resume/pom.xml" />
-        <option value="$PROJECT_DIR$/08_Spring01_IoC/pom.xml" />
-        <option value="$PROJECT_DIR$/09_Spring02_依赖注入/pom.xml" />
-        <option value="$PROJECT_DIR$/10_Spring03_复杂对象/pom.xml" />
+        <option value="$PROJECT_DIR$/12_Spring05_Converter/pom.xml" />
+        <option value="$PROJECT_DIR$/13_Spring06_整合MyBatis/pom.xml" />
       </list>
     </option>
   </component>
