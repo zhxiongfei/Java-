@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/12_Spring05_Converter/12_Spring05_Converter.iml" filepath="$PROJECT_DIR$/12_Spring05_Converter/12_Spring05_Converter.iml" />
       <module fileurl="file://$PROJECT_DIR$/13_Spring06_整合MyBatis/13_Spring06_整合MyBatis.iml" filepath="$PROJECT_DIR$/13_Spring06_整合MyBatis/13_Spring06_整合MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_Spring07_bean的生命周期/14_Spring07_bean的生命周期.iml" filepath="$PROJECT_DIR$/14_Spring07_bean的生命周期/14_Spring07_bean的生命周期.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15_Spring08_静态代理/15_Spring08_静态代理.iml" filepath="$PROJECT_DIR$/15_Spring08_静态代理/15_Spring08_静态代理.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16_Spring09_动态代理/16_Spring09_动态代理.iml" filepath="$PROJECT_DIR$/16_Spring09_动态代理/16_Spring09_动态代理.iml" />
     </modules>
   </component>
 </project>

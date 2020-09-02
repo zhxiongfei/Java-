@@ -20,6 +20,9 @@
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/12_Spring05_Converter/pom.xml" />
         <option value="$PROJECT_DIR$/13_Spring06_整合MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/14_Spring07_bean的生命周期/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Spring08_静态代理/pom.xml" />
+        <option value="$PROJECT_DIR$/16_Spring09_动态代理/pom.xml" />
       </list>
     </option>
   </component>

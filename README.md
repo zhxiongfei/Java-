@@ -536,3 +536,70 @@
 
 ## day13
 
+### Bean生命周期
+
+#### 一个bean从出生到死亡，经历的生命周期方法是 :
+
+- 构造方法
+- setter注入方法
+- BeanNameAware 的 setBeanName方法
+- ApplicationContextAware的setApplicationContext
+- BeanPostProcessor 的 postProcessBeforeInitializetion
+- InitializingBean的 afterPropertiesSet
+- init-method
+- BeanPostProcessor的postProcessorAfterInitialization
+- 业务方法
+- DisposableBean的destroy
+- destroy-method
+
+
+
+
+
+## day14
+
+### 静态代理
+
+#### 业务层的一些问题
+
+- 业务层 (Service)的主要内容
+  - 业务代码 : 业务运算，dao操作等
+  - 附加代码 : 事务，日志，性能监控，异常处理等
+- 问题？
+  - 在业务层加入附加代码会显得很臃肿，累赘
+  - 很多时候又不得不加
+
+#### 代理
+
+##### 概念 ： 
+
+- 在不修改目标类的目标方法代码的前提下，为目标方法增加额外功能
+- 在代理类必须有同样的目标方法
+  - 代理类实现跟目标类同样的接口
+  - 若目标类没有实现接口，代理类继承目标类
+
+##### 实现方案 : 
+
+###### 静态代理 (Static Proxy): 
+
+- 开发人员手动编写类 (创建对应的 *.java 文件)
+- 基本上，一个目标类就要编写一个代理类
+
+###### 动态代理 (Dynamic Proxy)
+
+- 程序运行过程中动态生成代理类的字节码
+
+- 动态代理的常见实现方案有两种
+
+  - JDK自带的
+    - 代理类实现和目标类一样的接口
+  - 开源项目 CGLib (Code Generation Library)
+    - 代理类继承目标类
+    - Spring已经集成 CGLib
+
+  
+
+## day15
+
+### 动态代理
+
