@@ -601,5 +601,22 @@
 
 ## day15
 
-### 动态代理
+### Spring AOP
 
+- AOP(Aspect Oriented Programming) ，面向切面编程
+- Spring使用AOP技术封装了动态代理的功能，使用起来非常简单
+- 依赖 AspectJ 库
+  - aspectjrt (aspectj runtime)
+  - aspectjweaver 
+
+
+
+### AOP - MethodBeforeAdvice
+
+- 实现 MethodBeforeAdvice 接口，用来编写额外功能 (会在目标方法执行之前执行)
+
+
+
+#### AOP - MethodInterceptor
+
+- 实现 org.aopllicance.intercept.MethodInterceptor接口, 用来编写额外功能

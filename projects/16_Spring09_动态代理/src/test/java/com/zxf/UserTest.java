@@ -13,12 +13,18 @@ import java.lang.reflect.Proxy;
 public class UserTest {
 
     @Test
-    public void test3() {
+    public void test4() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         SkillService service = context.getBean("skillService",SkillService.class);
         service.save(null);
     }
 
+    @Test
+    public void test3() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SkillService service = context.getBean("skillService",SkillService.class);
+        service.save(null);
+    }
 
     @Test
     public void test2() {

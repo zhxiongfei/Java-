@@ -3,10 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    <bean class="com.zxf.processor.LogProcessor" />-->
+
+<!--    <bean id="userService"  class="com.zxf.service.impl.UserServiceImpl"/>-->
+
     <bean class="com.zxf.processor.LogProcessor2" />
-
-    <bean id="userService"  class="com.zxf.service.impl.UserServiceImpl"/>
-
-<!--    <bean id="skillService" class="com.zxf.service.SkillService"/>-->
+    <bean id="skillService" class="com.zxf.service.SkillService"/>
 
 </beans>

@@ -6,17 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="13_Spring06_整合MyBatis" />
-        <module name="14_Spring07_bean的生命周期" />
-        <module name="15_Spring08_静态代理" />
-        <module name="12_Spring05_Converter" />
-        <module name="16_Spring09_动态代理" />
+        <module name="17_Spring10_AOP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01_MyBatis" target="8" />
       <module name="01_MyBatis01_基本使用" target="8" />
       <module name="02_MyBatis02_多表关系" target="8" />
+      <module name="02_MyBatis02_多表关系 (1)" target="8" />
       <module name="03_MyBatis03_延迟加载" target="8" />
       <module name="04_MyBatis04_缓存" target="8" />
       <module name="05_MyBatis05_dao01" target="8" />
@@ -37,6 +34,7 @@
       <module name="15_maven_tomcat" target="8" />
       <module name="15_Spring08_静态代理" target="8" />
       <module name="16_Spring09_动态代理" target="8" />
+      <module name="17_Spring10_AOP" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
       <module name="resume" target="8" />
