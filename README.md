@@ -620,3 +620,61 @@
 #### AOP - MethodInterceptor
 
 - 实现 org.aopllicance.intercept.MethodInterceptor接口, 用来编写额外功能
+
+
+
+
+
+## day16
+
+### Spring事务管理
+
+- 使用Spring的声明式事务，可以极其容易地进行事务管理
+  - 在XML中进行声明配置
+  - 一般在service层进行事务管理
+- 可以通过propagation属性设置事务的传播行为
+  - 可以指定当事务嵌套时，如何管理事务
+  - 当Service调用Service时，会出现事务嵌套
+- **read-only**
+  - 当一个事务只执行读操作，那么数据库可能会采取某些优化错误
+    - read-only设置为true : 告诉数据库这是个只读事务
+    - 只适用于 REQUIRED 或 REQUERES_NEW
+- **timeout**
+  - 单位是秒，默认是 -1 (按照数据库默认情况处理),超时就会跑出异常
+- **rollback-for, no-rollback-for**
+  - 默认情况下，RuntimeException, Error会导致事务回滚，而Exception不会
+    - rollback-for
+      - 设置哪些异常会导致事务回滚 (在 runtimeException,Error的基础上增加异常)
+    - no-rollback-for
+      - 设置哪些异常不会导致事务回滚 (在Exception的基础上增加一些异常)
+
+
+
+## day17
+
+### 事务的隔离级别
+
+- 如果多个事务同时操作同一份数据，可能引发一下问题
+  - **脏读** : 一个事务读取到了另一个事务未提交的数据
+  - **不可重复读** : 一个事务范围内两个相同的查询却返回了不同数据
+  - **幻读** : 一个事务发现了之前本来确认不存在的数据
+- 可以设置隔离级别来解决上述问题 (由上到下，性能依次降低)
+  - READ UNCOMMITTED : 什么也解决不了
+  - READ COMMITED : 防止脏读
+  - REPEATABLE READ : 防止脏读,不可重复读 (MySQL的默认隔离级别)
+  - SERLALIZABLE: 可以防止脏读,不可重复读,幻读
+- 查询隔离级别的SQL语句
+  - SELECT @@TX_ISOLATION
+- 设置隔离级别
+  - SET GLOBAL TRANSACTION ISOLATION LEVEL 隔离级别
+
+
+
+## day17
+
+### 多个配置文件
+
+- 如果Spring配置文件的内容过多，可以采取多个配置文件的形式
+
+### Spring注解
+

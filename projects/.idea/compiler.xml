@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="17_Spring10_AOP" />
+        <module name="19_Spring12_多配置文件" />
+        <module name="20_Spring13_注解" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,7 +20,6 @@
       <module name="05_MyBatis05_dao01" target="8" />
       <module name="06_MyBatis06_dao2" target="8" />
       <module name="07_MyBatis07_dao03" target="8" />
-      <module name="08_Spring01_IoC" target="8" />
       <module name="10_maven" target="8" />
       <module name="11_maven_idea" target="8" />
       <module name="11_maveweb" target="8" />
@@ -35,6 +35,8 @@
       <module name="15_Spring08_静态代理" target="8" />
       <module name="16_Spring09_动态代理" target="8" />
       <module name="17_Spring10_AOP" target="8" />
+      <module name="19_Spring12_多配置文件" target="8" />
+      <module name="20_Spring13_注解" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
       <module name="resume" target="8" />
