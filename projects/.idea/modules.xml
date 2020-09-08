@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/19_Spring12_多配置文件/19_Spring12_多配置文件.iml" filepath="$PROJECT_DIR$/19_Spring12_多配置文件/19_Spring12_多配置文件.iml" />
-      <module fileurl="file://$PROJECT_DIR$/20_Spring13_注解/20_Spring13_注解.iml" filepath="$PROJECT_DIR$/20_Spring13_注解/20_Spring13_注解.iml" />
+      <module fileurl="file://$PROJECT_DIR$/31_SpringMVC01_基本使用/31_SpringMVC01_基本使用.iml" filepath="$PROJECT_DIR$/31_SpringMVC01_基本使用/31_SpringMVC01_基本使用.iml" />
     </modules>
   </component>
 </project>

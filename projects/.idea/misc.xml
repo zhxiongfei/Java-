@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/12_no_arch" />
     <file type="web" url="file://$PROJECT_DIR$/13_maven_web_idea" />
     <file type="web" url="file://$PROJECT_DIR$/15_maven_tomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/31_SpringMVC01_基本使用" />
     <file type="web" url="file://$PROJECT_DIR$/resume" />
     <file type="web" url="file://$PROJECT_DIR$/TestCookie" />
     <file type="web" url="file://$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2" />
@@ -18,8 +19,7 @@
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
-        <option value="$PROJECT_DIR$/19_Spring12_多配置文件/pom.xml" />
-        <option value="$PROJECT_DIR$/20_Spring13_注解/pom.xml" />
+        <option value="$PROJECT_DIR$/31_SpringMVC01_基本使用/pom.xml" />
       </list>
     </option>
   </component>

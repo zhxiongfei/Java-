@@ -678,3 +678,14 @@
 
 ### Spring注解
 
+
+
+## day18
+
+### SpringMVC
+
+- SpringMVC的正式名称是Spring Web MVC
+  - 是属于Spring框架的一部分
+  - 是基于Servlet API的Web框架
+- SpringMVC的核心功能是 : 拦截和处理客户端的请求
+
