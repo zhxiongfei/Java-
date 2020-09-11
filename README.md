@@ -689,3 +689,11 @@
   - 是基于Servlet API的Web框架
 - SpringMVC的核心功能是 : 拦截和处理客户端的请求
 
+
+
+## day19
+
+- SpringMVC 返回值
+  - 返回值为 为String,json,xml时, 设置编码
+  - 组装返回值类型为 json, xml
+

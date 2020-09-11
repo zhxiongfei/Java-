@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="31_SpringMVC01_基本使用" />
+        <module name="32_SpringMVC02_返回值" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +38,7 @@
       <module name="19_Spring12_多配置文件" target="8" />
       <module name="20_Spring13_注解" target="8" />
       <module name="31_SpringMVC01_基本使用" target="8" />
+      <module name="32_SpringMVC02_返回值" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
       <module name="resume" target="8" />

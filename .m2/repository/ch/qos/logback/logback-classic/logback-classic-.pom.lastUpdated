@@ -1,4 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon Sep 07 15:19:26 CST 2020
-@default-aliyun-https\://maven.aliyun.com/repository/public/.lastUpdated=1599463166804
+#Wed Sep 09 16:18:08 CST 2020
+@default-aliyun-https\://maven.aliyun.com/repository/public/.lastUpdated=1599639488770
 https\://maven.aliyun.com/repository/public/.error=Could not transfer artifact ch.qos.logback\:logback-classic\:pom\: from/to aliyun (https\://maven.aliyun.com/repository/public)\: Transfer failed for https\://maven.aliyun.com/repository/public/ch/qos/logback/logback-classic//logback-classic-.pom
