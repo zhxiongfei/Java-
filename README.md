@@ -697,3 +697,24 @@
   - 返回值为 为String,json,xml时, 设置编码
   - 组装返回值类型为 json, xml
 
+
+
+## day20
+
+- SpringMVC转发jsp
+- 在 Java  代码中，路径问题
+  1. 假设请求路径是 "http://IP地址：端口/context_path/path1/path2/path3"
+  2. 假设转发路径是 "/page/test.jsp"
+     1. 以斜线 "/"开头，参考路径是 **context_path**
+     2. 所以最终转发路径是 "http://IP地址：端口/context_path/page/test.jsp"
+  3. 假设转发路径是 "page/test.jsp"
+     1. 不以斜线开头，参考路径是**当前请求路径的上一层路径**
+     2. 所以最终转发路径是  "http://IP地址：端口/context_path/path1/path2/page/test.jsp"
+- 在jsp,html代码中，路径问题
+  1. 假设请求路径是 "http://IP地址：端口/context_path/path1/path2/path3"
+  2. 假设跳转路径是 "/page/test.jsp"
+     1. 以斜线 "/"开头，参考路径是**http://IP地址：端口**
+     2. 所以最终转发路径是 "http://IP地址：端口/page/test.jsp"
+  3. 假设转发路径是 "page/test.jsp"
+     1. 不以斜线开头，参考路径是**当前请求路径的上一层路径**
+     2. 所以最终转发路径是  "http://IP地址：端口/context_path/path1/path2/page/test.jsp"

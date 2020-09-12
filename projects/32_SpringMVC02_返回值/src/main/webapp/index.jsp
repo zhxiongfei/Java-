@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+
+<a href="test/dog/jsp1">测试</a>
+
 <input type="text" id="path">
 <button id="btn">请求</button>
 
