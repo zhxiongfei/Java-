@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/08_crm/08_crm.iml" filepath="$PROJECT_DIR$/08_crm/08_crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/31_SpringMVC01_基本使用/31_SpringMVC01_基本使用.iml" filepath="$PROJECT_DIR$/31_SpringMVC01_基本使用/31_SpringMVC01_基本使用.iml" />
-      <module fileurl="file://$PROJECT_DIR$/32_SpringMVC02_返回值/32_SpringMVC02_返回值.iml" filepath="$PROJECT_DIR$/32_SpringMVC02_返回值/32_SpringMVC02_返回值.iml" />
-      <module fileurl="file://$PROJECT_DIR$/IO流/IO流.iml" filepath="$PROJECT_DIR$/IO流/IO流.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spider/Spider.iml" filepath="$PROJECT_DIR$/Spider/Spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/语法练习/语法练习.iml" filepath="$PROJECT_DIR$/语法练习/语法练习.iml" />
     </modules>
   </component>

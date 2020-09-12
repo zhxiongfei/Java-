@@ -20,8 +20,7 @@
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
-        <option value="$PROJECT_DIR$/31_SpringMVC01_基本使用/pom.xml" />
-        <option value="$PROJECT_DIR$/32_SpringMVC02_返回值/pom.xml" />
+        <option value="$PROJECT_DIR$/Spider/pom.xml" />
       </list>
     </option>
   </component>

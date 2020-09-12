@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="31_SpringMVC01_基本使用" />
-        <module name="32_SpringMVC02_返回值" />
+        <module name="Spider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,6 +41,7 @@
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
       <module name="resume" target="8" />
+      <module name="Spider" target="8" />
       <module name="TestCookie" target="8" />
       <module name="TestCookie1" target="8" />
       <module name="xr2" target="8" />
