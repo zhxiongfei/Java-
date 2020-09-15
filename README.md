@@ -718,3 +718,49 @@
   3. 假设转发路径是 "page/test.jsp"
      1. 不以斜线开头，参考路径是**当前请求路径的上一层路径**
      2. 所以最终转发路径是  "http://IP地址：端口/context_path/path1/path2/page/test.jsp"
+
+
+
+## day21
+
+- SpringMVC文件上传
+- SpringMVC日期类型
+  - SpringMVC默认支持 yyyy/MM/dd 的日期格式转换，其他日期格式需要特殊处理
+  - 解决方法
+    - 方法1:使用 @DataTimeFormat
+    - 方法2: 使用 Converter
+
+
+
+## day22
+
+- SpringMVC异常处理
+- SpringMVC可以对异常信息做统一的处理，主要有4种方式
+  - 使用SpringMVC自带的异常处理类 : SimpleMappingExceptionResolver
+  - 自定义异常处理类: 实现HandlerExceptionResolver接口
+  - 使用注解 : @ExceptionHandler
+  - 使用注解 : @ExceptionHander + ControllerAdvice
+- SpringMVC 拦截器
+  - 拦截器(INterceptor)的功能，跟过滤器(Filter)类似，但是有本质区别
+    - 过滤器
+      - 是Servlet的一部分
+      - 能拦截任意请求，在请求抵达Servlet之前，响应抵达客户端之前拦截
+      - 常用与 : 编码设置，登录校验等
+    - 拦截器
+      - 是SpringMVC的一部分
+      - 只能拦截 DispatchServlet拦截到的内容,一般用来拦截controller
+      - 常用与；抽取controller的公共代码
+  - 拦截器 -HandlerInterceptor 方法解析
+    - preHandle : 在controller 的处理方法之前调用
+      - 一般在这里进行初始化，请求预处理操作
+      - 如果返回false，那么后序将不会再调用controller的处理用法, postHandler / afterCompletion方法
+      - 当有多个拦截器时，这个方法按照正序执行
+    - postHandle : 在controller的处理方法之后，在DispatcherServlet进行试图渲染之前调用
+      - 一般在这里进行请求后序加工处理操作
+      - 当有多个拦截器时，这个方法按照逆序执行
+    - afterCompletion : 在DispatcherServlet进行试图渲染之后调用
+      - 一般在这里进行资源回收操作
+      - 当有多个拦截器时，这个方法按照逆序执行
+
+
+

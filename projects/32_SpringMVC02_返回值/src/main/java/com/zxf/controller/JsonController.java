@@ -2,9 +2,11 @@ package com.zxf.controller;
 
 import com.zxf.domain.Dog;
 import com.zxf.domain.Student;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +14,15 @@ import java.util.List;
 @Controller
 public class JsonController {
 
+    @RequestMapping(value = "/other/{test}")
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST,reason = "你这个请求非常6")
+    @ResponseBody
+    public String wrong(){
+        return null;
+    }
+
     @RequestMapping(value = "json1", produces = "application/json")
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST,reason = "你这个请求非常6")
     @ResponseBody
     public String json1(){
         return "{\"name\":\"小码哥\",\"age\":20,\"car\":{\"name\":\"Jack\",\"price\":100}}";
@@ -61,5 +71,14 @@ public class JsonController {
         }
         return res;
     }
+
+
+    @RequestMapping(value = "test2")
+    @ResponseBody
+    public String test2(){
+        return "test2 SUCCESS";
+    }
+
+
 
 }

@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="33_SpringMVC03_特殊的请求参数" />
-        <module name="32_SpringMVC02_返回值" />
+        <module name="35_SpringMVC05_拦截器" />
+        <module name="34_SpringMVC04_异常" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +40,9 @@
       <module name="31_SpringMVC01_基本使用" target="8" />
       <module name="32_SpringMVC02_返回值" target="8" />
       <module name="33_SpringMVC03_特殊的请求参数" target="8" />
+      <module name="34_SpringMVC04_异常" target="8" />
+      <module name="34_SpringMVC04_异常处理" target="8" />
+      <module name="35_SpringMVC05_拦截器" target="8" />
       <module name="hellomaven" target="1.5" />
       <module name="mavenweb" target="8" />
       <module name="resume" target="8" />

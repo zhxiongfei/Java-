@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 15 10:43:16 CST 2020
+@default-aliyun-https\://maven.aliyun.com/repository/public/.lastUpdated=1600137796039
+https\://maven.aliyun.com/repository/public/.error=Could not transfer artifact javax.servlet.jsp.jstl\:jstl\:pom\: from/to aliyun (https\://maven.aliyun.com/repository/public)\: Transfer failed for https\://maven.aliyun.com/repository/public/javax/servlet/jsp/jstl/jstl//jstl-.pom

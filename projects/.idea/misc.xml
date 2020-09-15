@@ -9,6 +9,9 @@
     <file type="web" url="file://$PROJECT_DIR$/31_SpringMVC01_基本使用" />
     <file type="web" url="file://$PROJECT_DIR$/32_SpringMVC02_返回值" />
     <file type="web" url="file://$PROJECT_DIR$/33_SpringMVC03_特殊的请求参数" />
+    <file type="web" url="file://$PROJECT_DIR$/34_SpringMVC04_异常" />
+    <file type="web" url="file://$PROJECT_DIR$/34_SpringMVC04_异常处理" />
+    <file type="web" url="file://$PROJECT_DIR$/35_SpringMVC05_拦截器" />
     <file type="web" url="file://$PROJECT_DIR$/resume" />
     <file type="web" url="file://$PROJECT_DIR$/TestCookie" />
     <file type="web" url="file://$PROJECT_DIR$/../../mj_guide/Java第二季/04_代码/xr2" />
@@ -21,8 +24,9 @@
         <option value="$PROJECT_DIR$/12_no_archetype/pom.xml" />
         <option value="$PROJECT_DIR$/12_no_arch/pom.xml" />
         <option value="$PROJECT_DIR$/01_MyBatis/pom.xml" />
-        <option value="$PROJECT_DIR$/32_SpringMVC02_返回值/pom.xml" />
-        <option value="$PROJECT_DIR$/33_SpringMVC03_特殊的请求参数/pom.xml" />
+        <option value="$PROJECT_DIR$/34_SpringMVC04_异常处理/pom.xml" />
+        <option value="$PROJECT_DIR$/35_SpringMVC05_拦截器/pom.xml" />
+        <option value="$PROJECT_DIR$/34_SpringMVC04_异常/pom.xml" />
       </list>
     </option>
   </component>
