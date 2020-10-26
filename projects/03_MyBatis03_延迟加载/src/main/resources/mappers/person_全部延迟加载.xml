@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="person">
+
+    <sql id="sqlListAll">
+        SELECT * FROM person
+    </sql>
+
+    <resultMap id="rmList" type="com.zxf.bean.Person">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <association property="idCard"
+                     fetchType="lazy"
+                     select="idCard.getByPerson"
+                     column="id"
+                     javaType="com.zxf.bean.IdCard" />
+        <collection property="bankCards"
+                    fetchType="lazy"
+                    select="bankCard.listByPerson"
+                    column="id"
+                    ofType="com.zxf.bean.BankCard" />
+        <collection property="jobs"
+                    fetchType="lazy"
+                    select="job.listByPerson"
+                    column="id"
+                    ofType="com.zxf.bean.Job" />
+    </resultMap>
+
+    <select id="list" resultMap="rmList">
+        <include refid="sqlListAll" />
+    </select>
+
+    <select id="get" parameterType="int" resultMap="rmList">
+        <include refid="sqlListAll" /> WHERE id = #{id}
+    </select>
+
+</mapper>
