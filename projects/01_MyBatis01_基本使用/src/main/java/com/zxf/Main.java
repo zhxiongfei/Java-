@@ -23,10 +23,9 @@ public class Main {
         }catch (Exception e){
 
             e.printStackTrace();
-            connection.rollback();
 
             // 结束事物 ： 回滚
-            if (connection != null) connection.commit();
+            if (connection != null) connection.rollback();
         }
     }
 }
